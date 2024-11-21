@@ -55,7 +55,7 @@ public class SubCategoryTest extends Base {
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
 		homepage.callSubCategory();
-		subcategorypage.resetSubCategoryWithData("Electronics", "abcd");
+		subcategorypage.resetSubCategoryWithData("Electronics", "acd");
 		boolean actualstatus=subcategorypage.checkSearchListSubCategoriesDisplayed();
 		Assert.assertFalse(actualstatus);
 	}
