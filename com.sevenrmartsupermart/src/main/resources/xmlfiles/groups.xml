@@ -1,0 +1,16 @@
+<suite name="groceryapprelease">
+	<listeners>
+		<listener class-name="com.sevenrmartsupermart.listeners.ExtentReporter"></listener>
+	</listeners>
+	<test name="grouping">
+		<groups>
+			<run>
+				<include name="Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
+			<class name="com.sevenrmartsupermart.tests.SubCategoryTest"></class>
+		</classes>
+	</test>
+</suite>
