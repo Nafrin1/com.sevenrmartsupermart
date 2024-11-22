@@ -10,15 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class WaitUtility {
 	WebDriver driver;
 	WebDriverWait wait;
-	
-	public WaitUtility(WebDriver driver)
-	{
-		this.driver=driver;
+
+	public WaitUtility(WebDriver driver) {
+		this.driver = driver;
 	}
-	
-	public void waitForElementToBeClickable(WebElement element, long duration)
-	{
-		wait=new WebDriverWait(driver,Duration.ofSeconds(duration));
+
+	public void waitForElementToBeClickable(WebElement element, long duration) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 

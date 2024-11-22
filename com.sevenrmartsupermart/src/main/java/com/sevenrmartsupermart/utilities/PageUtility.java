@@ -36,9 +36,8 @@ public class PageUtility {
 	public void mouseDoubleClick(WebElement element) {
 		actions.doubleClick(element).build().perform();
 	}
-	
-	public void moveToElement(WebElement element)
-	{
+
+	public void moveToElement(WebElement element) {
 		actions.moveToElement(element).build().perform();
 	}
 
@@ -63,10 +62,10 @@ public class PageUtility {
 			return false;
 		}
 	}
-	
+
 	public boolean isDisplayed(WebElement element) {
 		try {
-			element.isDisplayed(); 
+			element.isDisplayed();
 			return true;
 
 		} catch (Exception e) {
@@ -81,24 +80,25 @@ public class PageUtility {
 			index = index + 2;
 		}
 	}
-	
-	public void waitAndClick(WebElement element)
-	{
-		WaitUtility waitutility=new WaitUtility(driver);
+
+	public void waitAndClick(WebElement element) {
+		WaitUtility waitutility = new WaitUtility(driver);
 		waitutility.waitForElementToBeClickable(element, 20);
 		element.click();
-		
+
 	}
-	
-	public void clickEnterKey(WebElement element,String password)
-	{
-		element.sendKeys(password+Keys.ENTER);
+
+	public void clickEnterKey(WebElement element, String password) {
+		element.sendKeys(password + Keys.ENTER);
 	}
-	
-	public void uploadFile(WebElement element, String path)
-	{
-		File file=new File(path);
+
+	public void uploadFile(WebElement element, String path) {
+		File file = new File(path);
 		element.sendKeys(file.getAbsolutePath());
 	}
-    
+
+	public void clearField(WebElement element) {
+		element.clear();
+	}
+
 }

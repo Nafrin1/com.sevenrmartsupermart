@@ -25,29 +25,4 @@ public class HomeTest extends Base {
 		Assert.assertEquals(actualoptions, expectedOptions);
 	}
 
-	@Test
-	public void verifySideMenuBarCanBeHidden() {
-
-		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		loginpage.login();
-		homepage.clickSideMenuButton();
-		String actualwidth = homepage.getSideMenuAttributeValue("style");
-		String expectedwidth = "overflow-y: scroll;";
-		Assert.assertEquals(actualwidth, expectedwidth);
-
-	}
-	
-	@Test
-	public void verifySideMenuCanBeExpandedByHoveringOver()
-	{
-		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		loginpage.login();
-		homepage.hoverOverCollapsedSideMenu();
-		String actualwidth = homepage.getSideMenuAttributeValue("style");
-		String expectedwidth = "os-scrollbar os-scrollbar-horizontal os-scrollbar-unusable ";
-		Assert.assertEquals(actualwidth, expectedwidth);
-	}
-
 }

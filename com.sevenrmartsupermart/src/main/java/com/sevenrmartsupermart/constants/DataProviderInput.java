@@ -8,7 +8,7 @@ public class DataProviderInput {
 	ExcelReader excelreader = new ExcelReader();
 
 	@DataProvider(name = "NewSubCategory")
-	public Object[][] SubCategorydetails() {
+	public Object[][] subCategorydetails() {
 		excelreader.setExcelFile("SubCategory", "CategoryNames");
 		return excelreader.getMultidimentionalData(4, 1);
 	}

@@ -43,4 +43,8 @@ public class GeneralUtility {
 		return faker.name().firstName();
 	}
 
+	public String returnTabName() {
+		return driver.getTitle();
+	}
+
 }

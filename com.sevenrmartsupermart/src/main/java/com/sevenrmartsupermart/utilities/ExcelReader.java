@@ -47,7 +47,7 @@ public class ExcelReader {
 
 		}
 	}
-	
+
 	public Object[][] getMultidimentionalData(int row, int column) {
 		Object data[][] = new Object[row][column];
 		for (int i = 0; i < row; i++) {

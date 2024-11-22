@@ -1,45 +1,59 @@
 package com.sevenrmartsupermart.pages;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
 
 public class SubCategoryPage {
 	WebDriver driver;
+	
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
-	WebElement searchButtonMain;
+	private WebElement searchButtonMain;
 	@FindBy(xpath = "//select[@class='form-control selectpicker']")
-	WebElement categoryDropDown;
+	private WebElement categoryDropDown;
 	@FindBy(xpath = "//input[@placeholder='Sub Category']")
-	WebElement subcategoryField;
+	private WebElement subcategoryField;
 	@FindBy(xpath = "//button[@class='btn btn-danger btn-fix']")
-	WebElement searchButton;
-	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr")
-	WebElement tableResult;
-	@FindBy(xpath = "//a[@onclick='click_button(1)']")
-	WebElement newCategoryButton;
-	@FindBy(xpath = "//a[@class='btn btn-default btn-fix']")
-	WebElement resetButton;
-	@FindBy(xpath = "(//div[@class='card-body'])[1]")
-	WebElement searchListSubCategories;
-	@FindBy(xpath = "//a[@onclick='click_button(1)']")
-	WebElement newSubCategoryButton;
-	@FindBy(xpath = "//input[@type='file']")
-	WebElement image;
-	@FindBy(xpath = "//button[@type='submit']")
-	WebElement saveButton;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
-	WebElement newSubCategorySaveAlert;
+	private WebElement searchButton;
 	@FindBy(xpath = "//input[@placeholder='Enter the Subcategory']")
-	WebElement newSubCategoryField;
+	private WebElement subCategoryFieldUpdate;
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr")
+	private WebElement tableResult;
+	@FindBy(xpath = "//a[@onclick='click_button(1)']")
+	private WebElement newCategoryButton;
+	@FindBy(xpath = "//a[@class='btn btn-default btn-fix']")
+	private WebElement resetButton;
+	@FindBy(xpath = "(//div[@class='card-body'])[1]")
+	private WebElement searchListSubCategories;
+	@FindBy(xpath = "//a[@onclick='click_button(1)']")
+	private WebElement newSubCategoryButton;
+	@FindBy(xpath = "//input[@type='file']")
+	private WebElement image;
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement saveButton;
+	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	private WebElement successAlert;
+	@FindBy(xpath = "//div[@class='alert alert-danger alert-dismissible']")
+	private WebElement failedAlert;
+	@FindBy(xpath = "//input[@placeholder='Enter the Subcategory']")
+	private WebElement newSubCategoryField;
 	@FindBy(xpath = "//p[text()='Sub Category']")
-	WebElement subCategoryOptionFromSideMenu;
+	private WebElement subCategoryOptionFromSideMenu;
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[1]")
-	WebElement firstRowOfSubCategoryList;
-
+	private WebElement firstRowOfSubCategoryList;
+	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")
+	List<WebElement> subCategoryList;
+	@FindBy(xpath = "//button[text()='Update']")
+	private WebElement updateButton;
+	
 
 	public SubCategoryPage(WebDriver driver) {
 		this.driver = driver;
@@ -149,11 +163,22 @@ public class SubCategoryPage {
 		clickSaveButton();
 	}
 	
-	public boolean showSuccessfullySavedSubCategoryAlert()
+	public String showSuccessfullySavedSubCategoryAlert()
+	{
+		return successAlert.getText();
+	}
+	
+	public String showFailedToSaveSubCategoryAlert()
+	{
+		return failedAlert.getText();
+	}
+	
+	public boolean failedAlertIsDisplayed()
 	{
 		PageUtility pageutility=new PageUtility(driver);
-		return pageutility.isDisplayed(newSubCategorySaveAlert);
+		return pageutility.isDisplayed(failedAlert);
 	}
+	
 	
 	public void openSubCategoryFromSideMenu()
 	{
@@ -164,5 +189,74 @@ public class SubCategoryPage {
 	{
 		return firstRowOfSubCategoryList.getText();
 	}
+	
+	public void clickUpdateButton(String subCategoryName)
+	{
+		GeneralUtility generalutility=new GeneralUtility(driver);
+		PageUtility pageutility=new PageUtility(driver);
+		List<String> subCategories=new ArrayList<String>();
+		subCategories=generalutility.getTextOfElements(subCategoryList);
+		
+		int index=0;
+		for(index=0;index<subCategories.size();index++)
+		{
+			if(subCategoryName.equals(subCategories.get(index)))
+			{
+				index++;
+				break;
+			}
+			
+		}
+		WebElement update=driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+index+"]//a[@class='btn btn-sm btn btn-primary btncss']"));
+		pageutility.moveToElement(update);
+		update.click();
+	}
+	
+	public String getTableContents(String subCategoryName)
+	{
+		GeneralUtility generalutility=new GeneralUtility(driver);
+		List<String> subCategories=new ArrayList<String>();
+		subCategories=generalutility.getTextOfElements(subCategoryList);
+		
+		int index=0;
+		for(index=0;index<subCategories.size();index++)
+		{
+			if(subCategoryName.equals(subCategories.get(index)))
+			{
+				index++;
+				break;
+			}
+			
+		}
+		WebElement rowContent=driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+index+"]"));
+		return rowContent.getText();
+		
+		
+	}
+	
+	public void ClickUpdateAfterUpdation()
+	{
+		PageUtility pageutility=new PageUtility(driver);
+		pageutility.moveToElement(updateButton);
+		updateButton.click();
+	}
+	
+	public String showCurrentTabName()
+	{
+		GeneralUtility generalutility=new GeneralUtility(driver);
+		return generalutility.returnTabName();
+	}
+	
+	public void clearSubCategory()
+	{
+		PageUtility pageutility=new PageUtility(driver);
+		pageutility.clearField(subCategoryFieldUpdate);
+	}
+	
+	public void enterSubCategoryToUpdate(String subCategory) {
+		subCategoryFieldUpdate.sendKeys(subCategory);
+	}
+
+	
 
 }
