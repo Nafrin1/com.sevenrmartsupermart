@@ -150,7 +150,7 @@ public class SubCategoryTest extends Base {
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage("Vegetables", subCategory);
 		subcategorypage.openSubCategoryFromSideMenu();
-		subcategorypage.createNewCategoryWithNoImage("Grocery", subCategory);
+		subcategorypage.createNewCategoryWithNoImage("Appliances", subCategory);
 		String actualAlertMessage = subcategorypage.showFailedToSaveSubCategoryAlert();
 		if (subcategorypage.failedAlertIsDisplayed() == false) {
 			System.out.println("No alert Shown");
