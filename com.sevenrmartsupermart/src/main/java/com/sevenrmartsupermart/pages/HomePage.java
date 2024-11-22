@@ -46,8 +46,9 @@ public class HomePage {
 		logoutButton.click();
 	}
 
-	public void callSubCategory() {
+	public SubCategoryPage callSubCategory() {
 		subCategory.click();
+		return new SubCategoryPage(driver);
 	}
 
 	public String getTabName() {

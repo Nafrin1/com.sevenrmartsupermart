@@ -52,20 +52,22 @@ public class LoginPage {
 		signInButton.click();
 	}
 
-	public void login(String userName, String password) {
+	public HomePage login(String userName, String password) {
 		enterUserName(userName);
 		enterPassword(password);
 		clickSignInButton();
+		return new HomePage(driver);
 
 	}
 	
-	public void login()
+	public HomePage login()
 	{
 		String userName=properties.getProperty("username");
 		String password=properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
 		clickSignInButton();
+		return new HomePage(driver);
 	}
 	
 	public void loginWithRememberMeCheckBox()

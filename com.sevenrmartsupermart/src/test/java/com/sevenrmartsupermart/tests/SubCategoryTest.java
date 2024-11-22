@@ -77,10 +77,8 @@ public class SubCategoryTest extends Base {
 	@Test(dataProvider = "NewSubCategory", dataProviderClass = DataProviderInput.class)
 	public void verifyNewCategoryCanBeCreatedWithoutImage(String category) {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.callSubCategory();
+		homepage=loginpage.login();
+		subcategorypage=homepage.callSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage(category, subCategory);
 		String actualAlertMessage = subcategorypage.showSuccessfullySavedSubCategoryAlert();
