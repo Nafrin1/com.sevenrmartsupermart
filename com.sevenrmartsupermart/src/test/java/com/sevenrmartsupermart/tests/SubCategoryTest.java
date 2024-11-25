@@ -1,5 +1,8 @@
 package com.sevenrmartsupermart.tests;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -26,7 +29,7 @@ public class SubCategoryTest extends Base {
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
-		homepage.callSubCategory();
+		homepage.clickSubCategory();
 		subcategorypage.searchSubCategoryWithData("Electronics", "Speaker");
 		String actualData = subcategorypage.getSearchResult();
 		String expectedData = "Speaker Electronics Active";
@@ -40,7 +43,7 @@ public class SubCategoryTest extends Base {
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
-		homepage.callSubCategory();
+		homepage.clickSubCategory();
 		subcategorypage.searchSubCategoryWithData("Electronics", "abcd");
 		String actualData = subcategorypage.getSearchResult();
 		String expectedData = ".........RESULT NOT FOUND.......";
@@ -54,7 +57,7 @@ public class SubCategoryTest extends Base {
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
-		homepage.callSubCategory();
+		homepage.clickSubCategory();
 		subcategorypage.resetSubCategoryWithData("Electronics", "acd");
 		boolean actualstatus = subcategorypage.checkSearchListSubCategoriesDisplayed();
 		Assert.assertFalse(actualstatus);
@@ -66,7 +69,7 @@ public class SubCategoryTest extends Base {
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
-		homepage.callSubCategory();
+		homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithImage(category, subCategory);
 		String actualAlertMessage = subcategorypage.showSuccessfullySavedSubCategoryAlert();
@@ -78,7 +81,7 @@ public class SubCategoryTest extends Base {
 	public void verifyNewCategoryCanBeCreatedWithoutImage(String category) {
 		loginpage = new LoginPage(driver);
 		homepage=loginpage.login();
-		subcategorypage=homepage.callSubCategory();
+		subcategorypage=homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage(category, subCategory);
 		String actualAlertMessage = subcategorypage.showSuccessfullySavedSubCategoryAlert();
@@ -89,10 +92,8 @@ public class SubCategoryTest extends Base {
 	@Test
 	public void verifyNewCategoryIsShownFirstInTable() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.callSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage("Vegetables", subCategory);
 		subcategorypage.openSubCategoryFromSideMenu();
@@ -104,10 +105,8 @@ public class SubCategoryTest extends Base {
 	@Test
 	public void verifySubCategoryCannotBeSearchedWithoutSelectingCategory() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.callSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		String dataOnFirstRowBeforeSearch = subcategorypage.returnFirstRowOfTable();
 		subcategorypage.searchSubCategoryWithoutCategory("Speaker");
 		String dataOnFirstRowAfterSearch = subcategorypage.returnFirstRowOfTable();
@@ -117,10 +116,8 @@ public class SubCategoryTest extends Base {
 	@Test
 	public void verifySubCategoryCanBeUpdated() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.callSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		subcategorypage.createNewCategoryWithNoImage("Ergonomic Iron Hat", "tea");
 		subcategorypage.openSubCategoryFromSideMenu();
 		subcategorypage.clickUpdateButton("tea");
@@ -134,9 +131,9 @@ public class SubCategoryTest extends Base {
 		String expectedTabName = "List Sub Categories";
 		String actualUpdatedContent = subcategorypage.getTableContents(newSubCategory);
 		String expectedUpdatedContent = newSubCategory + " Ergonomic Iron Hat";
-		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage), "Alert verified");
-		softassert.assertTrue(actualTabName.contains(expectedTabName), "Tab name verified");
-		softassert.assertTrue(actualUpdatedContent.contains(expectedUpdatedContent), "Updation Verified");
+		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage), "Alert verification failed");
+		softassert.assertTrue(actualTabName.contains(expectedTabName), "Tab name verification failed");
+		softassert.assertTrue(actualUpdatedContent.contains(expectedUpdatedContent), "Updation Verification failed");
 		softassert.assertAll();
 	}
 
@@ -146,21 +143,41 @@ public class SubCategoryTest extends Base {
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
 		loginpage.login();
-		homepage.callSubCategory();
+		homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage("Vegetables", subCategory);
 		subcategorypage.openSubCategoryFromSideMenu();
 		subcategorypage.createNewCategoryWithNoImage("Appliances", subCategory);
 		String actualAlertMessage = subcategorypage.showFailedToSaveSubCategoryAlert();
 		if (subcategorypage.failedAlertIsDisplayed() == false) {
-			System.out.println("No alert Shown");
-			System.out.println("New Category is Created");
+			softassert.fail("Alert was not displayed when it was expected.");
+			boolean actualStatus = subcategorypage.isSubCategoryNotPresent("Appliances", subCategory);
+		    softassert.assertTrue(actualStatus, "The subcategory was incorrectly created under 'Appliances'!");
+		   
 		} else {
 			String expectedAlertMessage = "Sub Category already exists.";
-			Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
-
+			System.out.println(expectedAlertMessage);
+			softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));	
 		}
 
+	}
+	
+	@Test
+	public void verifyIfCategoryCanBeDeletedFromSubCategoryList()
+	{
+			loginpage = new LoginPage(driver);
+			homepage = new HomePage(driver);
+			subcategorypage = new SubCategoryPage(driver);
+			loginpage.login();
+			homepage.clickSubCategory();
+			String subCategory = GeneralUtility.getRandomName();
+			subcategorypage.createNewCategoryWithNoImage("Grocery", subCategory);
+			subcategorypage.openSubCategoryFromSideMenu();
+			String actualAlertMessage=subcategorypage.returnAlertMessageForDeletion(subCategory);
+			String expectedAlertMessage="Sub Category Deleted Successfully";
+			boolean actualDeletionStatus = subcategorypage.isSubCategoryNotPresent("Grocery", subCategory);
+			softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+			softassert.assertTrue(actualDeletionStatus, "SubCategory has not been deleted as expected!");
 	}
 
 }

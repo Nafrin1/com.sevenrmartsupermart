@@ -46,7 +46,7 @@ public class HomePage {
 		logoutButton.click();
 	}
 
-	public SubCategoryPage callSubCategory() {
+	public SubCategoryPage clickSubCategory() {
 		subCategory.click();
 		return new SubCategoryPage(driver);
 	}
@@ -55,49 +55,26 @@ public class HomePage {
 		return driver.getTitle();
 	}
 
-	public List<String> getDashboardOptions() {
+	public List<String> getHomePageOptions() {
 		GeneralUtility generalutility = new GeneralUtility(driver);
-		List<String> homeMenuList = new ArrayList();
+		List<String> homeMenuList = new ArrayList<String>();
 		homeMenuList = generalutility.getTextOfElements(homePageOptions);
 		return homeMenuList;
 	}
 
-	public List<String> originalDashboardOptions() {
-		List<String> options = new ArrayList();
-		String option1 = "7356\r\n" + "Admin Users\r\n" + "More info";
-		String option1Correct = option1.replace("\r\n", " ");
-		String option2 = "0\r\n" + "Dashboard\r\n" + "More info";
-		String option2Correct = option2.replace("\r\n", " ");
-		String option3 = "26\r\n" + "Category\r\n" + "More info";
-		String option3Correct = option3.replace("\r\n", " ");
-		String option4 = "547\r\n" + "Sub Category\r\n" + "More info";
-		String option4Correct = option4.replace("\r\n", " ");
-		String option5 = "1\r\n" + "Manage Contact\r\n" + "More info";
-		String option5Correct = option5.replace("\r\n", " ");
-		String option6 = " 0\r\n" + "Manage Gift cards &vouchers\r\n" + "More info";
-		String option6Correct = option6.replace("\r\n", " ");
-		String option7 = "0\r\n" + "Test name\r\n" + "More info";
-		String option7Correct = option7.replace("\r\n", " ");
-		String option8 = "0\r\n" + "Manage Product\r\n" + "More info";
-		String option8Correct = option8.replace("\r\n", " ");
-		String option9 = "0\r\n" + "Manage News\r\n" + "More info";
-		String option9Correct = option9.replace("\r\n", " ");
-		String option10 = " 0\r\n" + "Manage Footer Text\r\n" + "More info";
-		String option10Correct = option10.replace("\r\n", " ");
-		String option11 = "0\r\n" + "Manage Category\r\n" + "More info";
-		String option11Correct = option11.replace("\r\n", " ");
-
-		options.add(option1Correct);
-		options.add(option2Correct);
-		options.add(option3Correct);
-		options.add(option4Correct);
-		options.add(option5Correct);
-		options.add(option6Correct);
-		options.add(option7Correct);
-		options.add(option8Correct);
-		options.add(option9Correct);
-		options.add(option10Correct);
-		options.add(option11Correct);
+	public List<String> originalHomePageOptions() {
+		List<String> options = new ArrayList<String>();
+		options.add("Admin Users");
+		options.add("Dashboard");
+		options.add("Category");
+		options.add("Sub Category");
+		options.add("Manage Contact");
+		options.add("Manage Gift cards &vouchers");
+		options.add("Test name");
+		options.add("Manage Product");
+		options.add("Manage News");
+		options.add("Manage Footer Text");
+		options.add("Manage Category");
 
 		return options;
 	}

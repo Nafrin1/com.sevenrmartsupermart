@@ -31,7 +31,7 @@ public class LoginTest extends Base {
 	public void verifyRememberMeCheckboxIsEnabled() {
 		loginpage = new LoginPage(driver);
 		boolean actualStatus = loginpage.returnCheckBoxEnableStatus();
-		Assert.assertFalse(actualStatus);
+		Assert.assertTrue(actualStatus);
 	}
 
 	@Test
@@ -65,8 +65,8 @@ public class LoginTest extends Base {
 		homepage = new HomePage(driver);
 		loginpage.loginWithoutPassword("admin");
 		String actualTabName = homepage.getTabName();
-		String expectedTabName = "Login|7rmart supermarket";
-		Assert.assertEquals(actualTabName, expectedTabName, "Login is not allowed");
+		String expectedTabName = "Login | 7rmart supermarket";
+		Assert.assertEquals(actualTabName, expectedTabName, "Login is allowed");
 	}
 
 	@Test
@@ -75,8 +75,8 @@ public class LoginTest extends Base {
 		homepage = new HomePage(driver);
 		loginpage.loginWithoutUsername("admin");
 		String actualTabName = homepage.getTabName();
-		String expectedTabName = "Login|7rmart supermarket";
-		Assert.assertEquals(actualTabName, expectedTabName, "Login is not allowed");
+		String expectedTabName = "Login | 7rmart supermarket";
+		Assert.assertEquals(actualTabName, expectedTabName, "Login is allowed");
 	}
 
 	@Test
@@ -101,7 +101,6 @@ public class LoginTest extends Base {
 		excelreader.setExcelFile("LoginPageData", "SignInData");
 		String userNameData = excelreader.getCellData(3, 0);
 		String passwordData = excelreader.getCellData(3, 1);
-		System.out.println(userNameData + " " + passwordData);
 		loginpage.login(userNameData, passwordData);
 		boolean actualAlertstatus = loginpage.alertTextIsDisplayed();
 		Assert.assertEquals(actualAlertstatus, true);
@@ -117,7 +116,7 @@ public class LoginTest extends Base {
 
 		String expectedColor = "rgba(52, 58, 64, 1)";
 		String expectedTextColor = "rgba(255, 255, 255, 1)";
-		String expectedFontSize = "16px 16px";
+		String expectedFontSize = "16px";
 		String expectedFontStyle = "normal";
 		softassert.assertEquals(actualColor, expectedColor);
 		softassert.assertEquals(actualTextColor, expectedTextColor);

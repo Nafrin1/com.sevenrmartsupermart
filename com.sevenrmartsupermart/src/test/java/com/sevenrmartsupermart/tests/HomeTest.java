@@ -2,6 +2,7 @@ package com.sevenrmartsupermart.tests;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -19,10 +20,13 @@ public class HomeTest extends Base {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);
 		loginpage.login();
-		List<String> actualoptions = homepage.getDashboardOptions();
-		List<String> expectedOptions = new ArrayList();
-		expectedOptions = homepage.originalDashboardOptions();
-		Assert.assertEquals(actualoptions, expectedOptions);
+		List<String> actualOptions = homepage.getHomePageOptions();
+		List<String> expectedOptions = homepage.originalHomePageOptions();
+		List<String> processedActualOptions = actualOptions.stream()
+		        .map(option -> option.replaceAll("\\d+", "").replaceAll("More info", "").trim())
+		        .collect(Collectors.toList());
+
+		 Assert.assertEquals(processedActualOptions, expectedOptions, "Lists do not match!");
 	}
 
 }

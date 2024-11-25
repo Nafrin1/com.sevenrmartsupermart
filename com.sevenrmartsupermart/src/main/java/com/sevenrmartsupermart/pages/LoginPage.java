@@ -15,6 +15,7 @@ import com.sevenrmartsupermart.utilities.PageUtility;
 public class LoginPage {
 	WebDriver driver;
 	Properties properties = new Properties();
+	
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement userNameField;
 	@FindBy(xpath = "//input[@type='password']")

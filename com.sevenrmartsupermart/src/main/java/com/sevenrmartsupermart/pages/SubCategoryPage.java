@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
+import com.sevenrmartsupermart.utilities.WaitUtility;
 
 public class SubCategoryPage {
 	WebDriver driver;
@@ -53,6 +54,8 @@ public class SubCategoryPage {
 	List<WebElement> subCategoryList;
 	@FindBy(xpath = "//button[text()='Update']")
 	private WebElement updateButton;
+	@FindBy(xpath = "")
+	private WebElement deleteButton;
 	
 
 	public SubCategoryPage(WebDriver driver) {
@@ -256,7 +259,43 @@ public class SubCategoryPage {
 	public void enterSubCategoryToUpdate(String subCategory) {
 		subCategoryFieldUpdate.sendKeys(subCategory);
 	}
-
 	
+	public boolean isSubCategoryNotPresent(String categoryName, String subCategoryName) {
+
+		String xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[td[contains(text(),'"+subCategoryName+"')] and td[contains(text(),'"+categoryName+"')]]";
+	    List<WebElement> matchingRows = driver.findElements(By.xpath(xpath));
+	    return matchingRows.isEmpty();
+	}
+
+	public void clickDeleteButton(String subCategoryName)
+	{
+			GeneralUtility generalutility=new GeneralUtility(driver);
+			PageUtility pageutility=new PageUtility(driver);
+			List<String> subCategories=new ArrayList<String>();
+			subCategories=generalutility.getTextOfElements(subCategoryList);
+			
+			int index=0;
+			for(index=0;index<subCategories.size();index++)
+			{
+				if(subCategoryName.equals(subCategories.get(index)))
+				{
+					index++;
+					break;
+				}
+				
+			}
+			WebElement delete=driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+index+"]//a[@class='btn btn-sm btn btn-danger btncss']"));
+			pageutility.moveToElement(delete);
+			delete.click();
+	}
+	
+	public String returnAlertMessageForDeletion(String subCategoryName)
+	{
+		WaitUtility waitutility=new WaitUtility(driver);
+		clickDeleteButton(subCategoryName);
+		driver.switchTo().alert().accept(); 
+		waitutility.waitForElementToComeToView(successAlert, 20);
+		return successAlert.getText();
+	}
 
 }
