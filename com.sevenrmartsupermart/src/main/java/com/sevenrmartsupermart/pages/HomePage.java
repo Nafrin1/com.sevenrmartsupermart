@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
 
+
 public class HomePage {
 	WebDriver driver;
 	
@@ -20,11 +21,12 @@ public class HomePage {
 	private WebElement profileMenu;
 	@FindBy(xpath = "(//a[@class='dropdown-item'])[2]")
 	private WebElement logoutButton;
+	@FindBy(xpath = "(//a[@class='dropdown-item'])[1]")
+	private WebElement settingsButton;
 	@FindBy(xpath = "(//p[contains(text(),'Sub Category')]//following::a[1])[2]")
 	private WebElement subCategory;
-	@FindBy(xpath = "//div[@class='row']/div")
-	List<WebElement> homePageOptions;
-	
+	@FindBy(xpath = "//a[@class='dropdown-item']")
+	List<WebElement> profileOptions;
 	
 	
 
@@ -55,28 +57,18 @@ public class HomePage {
 		return driver.getTitle();
 	}
 
-	public List<String> getHomePageOptions() {
-		GeneralUtility generalutility = new GeneralUtility(driver);
-		List<String> homeMenuList = new ArrayList<String>();
-		homeMenuList = generalutility.getTextOfElements(homePageOptions);
-		return homeMenuList;
+	public boolean isLogoutDisplayed()
+	{
+		PageUtility pageutility=new PageUtility(driver);
+		return pageutility.isDisplayed(logoutButton);
 	}
-
-	public List<String> originalHomePageOptions() {
-		List<String> options = new ArrayList<String>();
-		options.add("Admin Users");
-		options.add("Dashboard");
-		options.add("Category");
-		options.add("Sub Category");
-		options.add("Manage Contact");
-		options.add("Manage Gift cards &vouchers");
-		options.add("Test name");
-		options.add("Manage Product");
-		options.add("Manage News");
-		options.add("Manage Footer Text");
-		options.add("Manage Category");
-
-		return options;
+	
+	public boolean isSettingsDisplayed()
+	{
+		PageUtility pageutility=new PageUtility(driver);
+		return pageutility.isDisplayed(settingsButton);
 	}
+	
+	
 
 }

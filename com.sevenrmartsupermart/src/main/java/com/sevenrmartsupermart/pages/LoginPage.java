@@ -161,4 +161,14 @@ public class LoginPage {
 		enterUserName(userName);
 		enterPasswordAndClickEnterKey();
 	}
+	
+	public String getTabName() {
+		return driver.getTitle();
+	}
+	
+	public boolean signInButtonIsDisplayed()
+	{
+		PageUtility pageutility=new PageUtility(driver);
+		return pageutility.isDisplayed(signInButton);
+	}
 }

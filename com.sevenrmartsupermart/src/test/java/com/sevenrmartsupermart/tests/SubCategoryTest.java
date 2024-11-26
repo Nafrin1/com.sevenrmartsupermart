@@ -1,8 +1,5 @@
 package com.sevenrmartsupermart.tests;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -52,7 +49,7 @@ public class SubCategoryTest extends Base {
 	}
 
 	@Test(groups = "Sanity")
-	public void verifyWhetherSearchFieldsCanBeReset() {
+	public void verifyWhetherSearchFieldCanBeReset() {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
@@ -64,7 +61,7 @@ public class SubCategoryTest extends Base {
 	}
 
 	@Test(dataProvider = "NewSubCategory", dataProviderClass = Constants.class)
-	public void verifyNewCategoryCanBeCreated(String category) {
+	public void verifyNewCategoryCanBeCreatedWithImage(String category) {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);
 		subcategorypage = new SubCategoryPage(driver);
@@ -149,17 +146,8 @@ public class SubCategoryTest extends Base {
 		subcategorypage.openSubCategoryFromSideMenu();
 		subcategorypage.createNewCategoryWithNoImage("Appliances", subCategory);
 		String actualAlertMessage = subcategorypage.showFailedToSaveSubCategoryAlert();
-		if (subcategorypage.failedAlertIsDisplayed() == false) {
-			softassert.fail("Alert was not displayed when it was expected.");
-			boolean actualStatus = subcategorypage.isSubCategoryNotPresent("Appliances", subCategory);
-		    softassert.assertTrue(actualStatus, "The subcategory was incorrectly created under 'Appliances'!");
-		   
-		} else {
-			String expectedAlertMessage = "Sub Category already exists.";
-			System.out.println(expectedAlertMessage);
-			softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));	
-		}
-
+		String expectedAlertMessage = "Sub Category already exists.";
+		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
 	}
 	
 	@Test
@@ -178,6 +166,7 @@ public class SubCategoryTest extends Base {
 			boolean actualDeletionStatus = subcategorypage.isSubCategoryNotPresent("Grocery", subCategory);
 			softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
 			softassert.assertTrue(actualDeletionStatus, "SubCategory has not been deleted as expected!");
+			softassert.assertAll();
 	}
 
 }

@@ -8,7 +8,6 @@ import com.sevenrmartsupermart.base.Base;
 import com.sevenrmartsupermart.pages.HomePage;
 import com.sevenrmartsupermart.pages.LoginPage;
 import com.sevenrmartsupermart.utilities.ExcelReader;
-import com.sevenrmartsupermart.utilities.ScreenShotCapture;
 
 public class LoginTest extends Base {
 	LoginPage loginpage;
@@ -113,7 +112,6 @@ public class LoginTest extends Base {
 		String actualTextColor = loginpage.getColorOfText();
 		String actualFontSize = loginpage.getFontSize();
 		String actualFontStyle = loginpage.getFontStyle();
-
 		String expectedColor = "rgba(52, 58, 64, 1)";
 		String expectedTextColor = "rgba(255, 255, 255, 1)";
 		String expectedFontSize = "16px";
