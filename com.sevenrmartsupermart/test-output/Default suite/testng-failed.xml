@@ -5,7 +5,7 @@
     <classes>
       <class name="com.sevenrmartsupermart.tests.SubCategoryTest">
         <methods>
-          <include name="verifySubCategoryCanBeUpdated" invocation-numbers="0 1 2 3"/>
+          <include name="verifyNewCategoryCanBeCreatedWithImage" invocation-numbers="0 1 2 3"/>
           <include name="terminateSession"/>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>

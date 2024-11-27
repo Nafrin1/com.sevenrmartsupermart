@@ -60,7 +60,7 @@ public class SubCategoryTest extends Base {
 		Assert.assertFalse(actualstatus);
 	}
 
-	@Test(dataProvider = "NewSubCategory", dataProviderClass = Constants.class)
+	@Test(dataProvider = "NewSubCategory", dataProviderClass = DataProviderInput.class)
 	public void verifyNewCategoryCanBeCreatedWithImage(String category) {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);

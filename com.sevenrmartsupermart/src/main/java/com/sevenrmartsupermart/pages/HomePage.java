@@ -1,6 +1,6 @@
 package com.sevenrmartsupermart.pages;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
 
 
@@ -27,7 +26,8 @@ public class HomePage {
 	private WebElement subCategory;
 	@FindBy(xpath = "//a[@class='dropdown-item']")
 	List<WebElement> profileOptions;
-	
+	@FindBy(xpath = "(//ul[@class='nav nav-pills nav-sidebar flex-column']//p)[1]")
+	private WebElement sideMenuDashboard;
 	
 
 	public HomePage(WebDriver driver) {
@@ -68,7 +68,6 @@ public class HomePage {
 		PageUtility pageutility=new PageUtility(driver);
 		return pageutility.isDisplayed(settingsButton);
 	}
-	
 	
 
 }

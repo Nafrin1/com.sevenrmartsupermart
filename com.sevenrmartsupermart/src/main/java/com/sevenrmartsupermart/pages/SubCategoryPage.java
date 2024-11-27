@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.sevenrmartsupermart.constants.Constants;
 import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
 import com.sevenrmartsupermart.utilities.WaitUtility;
@@ -138,8 +139,7 @@ public class SubCategoryPage {
 	public void uploadImage()
 	{
 		PageUtility pageutility=new PageUtility(driver);
-		String path="C:\\Users\\hp\\Downloads\\spongebob.jpg";
-		pageutility.uploadFile(image, path);
+		pageutility.uploadFile(image,Constants.SAMPLE_IMAGE_PATH);
 	}
 	
 	public void clickSaveButton()
