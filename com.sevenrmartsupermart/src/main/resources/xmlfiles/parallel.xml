@@ -11,13 +11,13 @@
 			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
 		</classes>
 	</test>
-	<test name="test2">
+	<test name="sanity">
 		<classes>
 			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
 			<class name="com.sevenrmartsupermart.tests.HomeTest"></class>
 		</classes>
 	</test>
-	<test name="test3">
+	<test name="regression">
 		<classes>
 			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
 			<class name="com.sevenrmartsupermart.tests.HomeTest"></class>

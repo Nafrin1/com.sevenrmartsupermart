@@ -1,7 +1,6 @@
 package com.sevenrmartsupermart.utilities;
 
 import java.io.File;
-import java.io.FileInputStream;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -9,8 +8,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-
-import com.sevenrmartsupermart.constants.Constants;
 
 public class PageUtility {
 	WebDriver driver;
@@ -87,9 +84,8 @@ public class PageUtility {
 		element.click();
 
 	}
-	
-	public void waitAndGetText(WebElement element)
-	{
+
+	public void waitAndGetText(WebElement element) {
 		WaitUtility waitutility = new WaitUtility(driver);
 		waitutility.waitForElementToComeToView(element, 20);
 		element.getText();
