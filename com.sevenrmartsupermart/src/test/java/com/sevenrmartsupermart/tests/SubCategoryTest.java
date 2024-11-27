@@ -137,10 +137,8 @@ public class SubCategoryTest extends Base {
 	@Test
 	public void verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage("Vegetables", subCategory);
 		subcategorypage.openSubCategoryFromSideMenu();
@@ -154,10 +152,8 @@ public class SubCategoryTest extends Base {
 	public void verifyIfCategoryCanBeDeletedFromSubCategoryList()
 	{
 			loginpage = new LoginPage(driver);
-			homepage = new HomePage(driver);
-			subcategorypage = new SubCategoryPage(driver);
-			loginpage.login();
-			homepage.clickSubCategory();
+			homepage = loginpage.login();
+			subcategorypage = homepage.clickSubCategory();
 			String subCategory = GeneralUtility.getRandomName();
 			subcategorypage.createNewCategoryWithNoImage("Grocery", subCategory);
 			subcategorypage.openSubCategoryFromSideMenu();

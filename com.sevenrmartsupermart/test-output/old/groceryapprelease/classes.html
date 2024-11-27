@@ -4,6 +4,44 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
+<td>com.sevenrmartsupermart.tests.HomeTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyHomePageOptions</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>terminateSession</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
 <td>com.sevenrmartsupermart.tests.LoginTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -11,11 +49,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyLoginIsAllowedUsingEnterKeyInKeyboard</td>
+<td>verifyAlertMessageIsShownWithWrongUsernameAndPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyAlertMessageIsShownWithWrongUsernameAndPassword</td>
+<td>verifyLoginIsAllowedUsingEnterKeyInKeyboard</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -39,13 +77,13 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyCSSAttributesofSignInButton</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox</td>
 <td>Sanity Smoke </td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyCSSAttributesofSignInButton</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>verifyAdminUserLogin</td>
@@ -60,6 +98,10 @@
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>launchBrowser</td>
@@ -82,11 +124,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyNewCategoryCanBeCreated</td>
+<td>verifySubCategoryListUsingSearchButton</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifySubCategoryListUsingSearchButton</td>
+<td>verifyNewCategoryCanBeCreatedWithImage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -95,20 +137,32 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyWhetherSearchFieldsCanBeReset</td>
-<td>Sanity </td>
-</tr>
+<td>verifySubCategoryCannotBeSearchedWithoutSelectingCategory</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>verifyNewCategoryCanBeCreatedWithoutImage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifySubCategoryCannotBeSearchedWithoutSelectingCategory</td>
+<td>verifyWhetherSearchFieldCanBeReset</td>
+<td>Sanity </td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyIfCategoryCanBeDeletedFromSubCategoryList</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>verifyNewCategoryIsShownFirstInTable</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifySubCategoryCanBeUpdated</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -116,6 +170,10 @@
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>launchBrowser</td>
