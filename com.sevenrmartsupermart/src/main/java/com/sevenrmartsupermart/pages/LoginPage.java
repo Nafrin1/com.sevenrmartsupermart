@@ -3,6 +3,7 @@ package com.sevenrmartsupermart.pages;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sevenrmartsupermart.constants.Constants;
 import com.sevenrmartsupermart.utilities.GeneralUtility;
 import com.sevenrmartsupermart.utilities.PageUtility;
+import com.sevenrmartsupermart.utilities.WaitUtility;
 
 public class LoginPage {
 	WebDriver driver;
@@ -99,13 +101,19 @@ public class LoginPage {
 		return groceryStoreName.getText();
 	}
 	
-	public String getValueAttributeOfUserNameField()
-	{
+	public String getValueAttributeOfUserNameField() {
+		WaitUtility waitutility = new WaitUtility(driver);
+		String userNamePath = "//input[@name='username']";
+		waitutility.waitForElementToBeVisibleByXpath(userNamePath, 20);
+		WebElement userNameField = driver.findElement(By.xpath(userNamePath));
 		return userNameField.getAttribute("value");
 	}
-	
-	public String getValueAttributeOfPasswordField()
-	{
+
+	public String getValueAttributeOfPasswordField() {
+		WaitUtility waitutility = new WaitUtility(driver);
+		String passwordPath = "//input[@name='password']";
+		waitutility.waitForElementToBeVisibleByXpath(passwordPath, 20);
+		WebElement passwordField = driver.findElement(By.xpath(passwordPath));
 		return passwordField.getAttribute("value");
 	}
 	

@@ -84,10 +84,10 @@ public class PageUtility {
 		element.click();
 
 	}
-
+	
 	public void waitAndGetText(WebElement element) {
 		WaitUtility waitutility = new WaitUtility(driver);
-		waitutility.waitForElementToComeToView(element, 20);
+		waitutility.waitForElementToBeVisible(element, 20);
 		element.getText();
 	}
 

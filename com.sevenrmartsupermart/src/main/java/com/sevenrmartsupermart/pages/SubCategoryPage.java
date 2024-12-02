@@ -292,7 +292,7 @@ public class SubCategoryPage {
 		WaitUtility waitutility=new WaitUtility(driver);
 		clickDeleteButton(subCategoryName);
 		driver.switchTo().alert().accept(); 
-		waitutility.waitForElementToComeToView(successAlert, 20);
+		waitutility.waitForElementToBeVisible(successAlert, 20);
 		return successAlert.getText();
 	}
 

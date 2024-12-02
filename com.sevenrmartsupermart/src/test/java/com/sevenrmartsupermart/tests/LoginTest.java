@@ -47,12 +47,10 @@ public class LoginTest extends Base {
 		homepage = new HomePage(driver);
 		loginpage.loginWithRememberMeCheckBox();
 		homepage.logout();
-
 		String actualUserNameValue = loginpage.getValueAttributeOfUserNameField();
 		String actualPasswordValue = loginpage.getValueAttributeOfPasswordField();
 		String expectedUserNameValue = "admin";
 		String expectedPasswordValue = "admin";
-
 		softassert.assertEquals(actualUserNameValue, expectedUserNameValue);
 		softassert.assertEquals(actualPasswordValue, expectedPasswordValue);
 		softassert.assertAll();
