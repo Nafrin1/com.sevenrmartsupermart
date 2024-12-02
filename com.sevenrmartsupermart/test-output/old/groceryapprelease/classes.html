@@ -42,6 +42,52 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
+<td>com.sevenrmartsupermart.tests.AdminUserTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyWhetherAdminUserListHasAllRequiredColoumns</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyStatusChangeIsPossibleThroughLockButton</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>launchBrowser</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>terminateSession</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
 <td>com.sevenrmartsupermart.tests.LoginTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -49,11 +95,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyAlertMessageIsShownWithWrongUsernameAndPassword</td>
+<td>verifyLoginIsAllowedUsingEnterKeyInKeyboard</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyLoginIsAllowedUsingEnterKeyInKeyboard</td>
+<td>verifyAlertMessageIsShownWithWrongUsernameAndPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -61,11 +107,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>checkGroceryAppName</td>
+<td>verifyLoginIsNotAllowedWithoutUsername</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyLoginIsNotAllowedWithoutUsername</td>
+<td>checkGroceryAppName</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -86,11 +132,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyAdminUserLogin</td>
+<td>verifyLoginIsNotAllowedWithoutPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyLoginIsNotAllowedWithoutPassword</td>
+<td>verifyAdminUserLogin</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -137,11 +183,15 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
+<td>verifyNewCategoryCanBeCreatedWithoutImage</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
 <td>verifySubCategoryCannotBeSearchedWithoutSelectingCategory</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyNewCategoryCanBeCreatedWithoutImage</td>
+<td>verifyIfCategoryCanBeDeletedFromSubCategoryList</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -150,15 +200,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyIfCategoryCanBeDeletedFromSubCategoryList</td>
+<td>verifyNewCategoryIsShownFirstInTable</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>verifyNewCategoryIsShownFirstInTable</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>

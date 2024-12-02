@@ -4,72 +4,18 @@
   <listeners>
     <listener class-name="com.sevenrmartsupermart.listeners.ExtentReporter"/>
   </listeners>
-  <test thread-count="3" parallel="tests" name="smoketest(failed)">
+  <test thread-count="3" parallel="tests" name="regression(failed)">
     <classes>
-      <class name="com.sevenrmartsupermart.tests.LoginTest">
+      <class name="com.sevenrmartsupermart.tests.AdminUserTest">
         <methods>
-          <include name="verifyLoginIsNotAllowedWithoutUsername"/>
-          <include name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox"/>
+          <include name="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded" invocation-numbers="0 1 2 3"/>
+          <include name="verifyStatusChangeIsPossibleThroughButton"/>
           <include name="terminateSession"/>
-          <include name="verifyLoginIsNotAllowedWithoutPassword"/>
-          <include name="verifyCSSAttributesofSignInButton"/>
           <include name="launchBrowser"/>
-          <include name="verifyRememberMeCheckboxIsEnabled"/>
+          <include name="launchBrowser"/>
+          <include name="verifyNewAdminUserWithinExistingUserNameWithSameUserTypeCannotBeCreated" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
+      </class> <!-- com.sevenrmartsupermart.tests.AdminUserTest -->
     </classes>
-  </test> <!-- smoketest(failed) -->
-  <test thread-count="3" parallel="tests" name="test2(failed)">
-    <classes>
-      <class name="com.sevenrmartsupermart.tests.HomeTest">
-        <methods>
-          <include name="terminateSession"/>
-          <include name="verifyHomePageOptions"/>
-          <include name="launchBrowser"/>
-          <include name="verifySideMenuCanBeExpandedByHoveringOver"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.HomeTest -->
-      <class name="com.sevenrmartsupermart.tests.LoginTest">
-        <methods>
-          <include name="verifyLoginIsNotAllowedWithoutUsername"/>
-          <include name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox"/>
-          <include name="terminateSession"/>
-          <include name="verifyLoginIsNotAllowedWithoutPassword"/>
-          <include name="launchBrowser"/>
-          <include name="verifyCSSAttributesofSignInButton"/>
-          <include name="verifyRememberMeCheckboxIsEnabled"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
-    </classes>
-  </test> <!-- test2(failed) -->
-  <test thread-count="3" parallel="tests" name="test3(failed)">
-    <classes>
-      <class name="com.sevenrmartsupermart.tests.HomeTest">
-        <methods>
-          <include name="terminateSession"/>
-          <include name="verifyHomePageOptions"/>
-          <include name="launchBrowser"/>
-          <include name="verifySideMenuCanBeExpandedByHoveringOver"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.HomeTest -->
-      <class name="com.sevenrmartsupermart.tests.LoginTest">
-        <methods>
-          <include name="verifyLoginIsNotAllowedWithoutUsername"/>
-          <include name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox"/>
-          <include name="terminateSession"/>
-          <include name="verifyLoginIsNotAllowedWithoutPassword"/>
-          <include name="verifyCSSAttributesofSignInButton"/>
-          <include name="launchBrowser"/>
-          <include name="verifyRememberMeCheckboxIsEnabled"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
-      <class name="com.sevenrmartsupermart.tests.SubCategoryTest">
-        <methods>
-          <include name="terminateSession"/>
-          <include name="launchBrowser"/>
-          <include name="verifySubCategoryListUsingSearchButton"/>
-        </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.SubCategoryTest -->
-    </classes>
-  </test> <!-- test3(failed) -->
+  </test> <!-- regression(failed) -->
 </suite> <!-- Failed suite [groceryapprelease] -->

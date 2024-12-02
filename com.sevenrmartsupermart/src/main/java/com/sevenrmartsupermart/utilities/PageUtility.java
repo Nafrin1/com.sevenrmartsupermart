@@ -84,11 +84,11 @@ public class PageUtility {
 		element.click();
 
 	}
-	
-	public void waitAndGetText(WebElement element) {
+
+	public String waitAndGetText(WebElement element) {
 		WaitUtility waitutility = new WaitUtility(driver);
 		waitutility.waitForElementToBeVisible(element, 20);
-		element.getText();
+		return element.getText();
 	}
 
 	public void clickEnterKey(WebElement element, String password) {

@@ -1,8 +1,5 @@
 package com.sevenrmartsupermart.pages;
 
-
-import java.util.List;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,10 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sevenrmartsupermart.utilities.PageUtility;
 
-
 public class HomePage {
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "//a[@class='d-block']")
 	private WebElement profileName;
 	@FindBy(xpath = "//a[@data-toggle='dropdown']")
@@ -28,7 +24,6 @@ public class HomePage {
 	private WebElement adminUser;
 	@FindBy(xpath = "(//ul[@class='nav nav-pills nav-sidebar flex-column']//p)[1]")
 	private WebElement sideMenuDashboard;
-	
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -57,20 +52,17 @@ public class HomePage {
 		return driver.getTitle();
 	}
 
-	public boolean isLogoutDisplayed()
-	{
-		PageUtility pageutility=new PageUtility(driver);
+	public boolean isLogoutDisplayed() {
+		PageUtility pageutility = new PageUtility(driver);
 		return pageutility.isDisplayed(logoutButton);
 	}
-	
-	public boolean isSettingsDisplayed()
-	{
-		PageUtility pageutility=new PageUtility(driver);
+
+	public boolean isSettingsDisplayed() {
+		PageUtility pageutility = new PageUtility(driver);
 		return pageutility.isDisplayed(settingsButton);
 	}
-	
-	public void clickAdminUser()
-	{
+
+	public void clickAdminUser() {
 		adminUser.click();
 	}
 

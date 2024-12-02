@@ -38,16 +38,20 @@ public class GeneralUtility {
 		}
 		return data;
 	}
-	
+
 	public static String getRandomName() {
 		Faker faker = new Faker();
 		return faker.name().firstName();
 	}
-	
-	public static String getRandomPassword()
-	{
+
+	public static String getRandomUserName() {
 		Faker faker = new Faker();
-		return faker.number().digits(6);
+		return faker.name().username();
+	}
+
+	public static String getRandomPassword() {
+		Faker faker = new Faker();
+		return faker.internet().password(5, 8);
 	}
 
 	public String returnTabName() {

@@ -1,31 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="60" passed="60" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-02T16:51:25 IST" name="Default suite" finished-at="2024-12-02T16:51:52 IST" duration-ms="26728">
+  <suite started-at="2024-12-02T18:14:50 IST" name="groceryapprelease" finished-at="2024-12-02T18:18:35 IST" duration-ms="225223">
     <groups>
       <group name="Sanity">
-        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="SubCategoryTest.verifyWhetherSearchFieldCanBeReset()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" name="verifyWhetherSearchFieldCanBeReset" class="com.sevenrmartsupermart.tests.SubCategoryTest"/>
       </group> <!-- Sanity -->
       <group name="Smoke">
-        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" class="com.sevenrmartsupermart.tests.LoginTest"/>
+        <method signature="SubCategoryTest.verifySubCategoryListUsingSearchButtonWithWrongData()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" name="verifySubCategoryListUsingSearchButtonWithWrongData" class="com.sevenrmartsupermart.tests.SubCategoryTest"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-12-02T16:51:25 IST" name="Default test" finished-at="2024-12-02T16:51:52 IST" duration-ms="26728">
+    <test started-at="2024-12-02T18:14:50 IST" name="smoketest" finished-at="2024-12-02T18:16:12 IST" duration-ms="82214">
       <class name="com.sevenrmartsupermart.tests.LoginTest">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639]" started-at="2024-12-02T16:51:25 IST" name="launchBrowser" finished-at="2024-12-02T16:51:43 IST" duration-ms="17717" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:14:50 IST" name="launchBrowser" finished-at="2024-12-02T18:14:56 IST" duration-ms="6437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639]" started-at="2024-12-02T16:51:43 IST" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" finished-at="2024-12-02T16:51:51 IST" duration-ms="8694" status="PASS">
+        <test-method signature="checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:14:56 IST" name="checkGroceryAppName" finished-at="2024-12-02T18:14:56 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox -->
-        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639]" started-at="2024-12-02T16:51:51 IST" name="terminateSession" finished-at="2024-12-02T16:51:52 IST" duration-ms="224" status="PASS">
+        </test-method> <!-- checkGroceryAppName -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:14:56 IST" name="terminateSession" finished-at="2024-12-02T18:14:57 IST" duration-ms="343" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox status=SUCCESS method=LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@cecf639] output={null}]]]>
+                <![CDATA[[TestResult name=checkGroceryAppName status=SUCCESS method=LoginTest.checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:14:57 IST" name="launchBrowser" finished-at="2024-12-02T18:15:02 IST" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:02 IST" name="verifyAdminUserLogin" finished-at="2024-12-02T18:15:05 IST" duration-ms="3170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserLogin -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:05 IST" name="terminateSession" finished-at="2024-12-02T18:15:05 IST" duration-ms="524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminUserLogin status=SUCCESS method=LoginTest.verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:05 IST" name="launchBrowser" finished-at="2024-12-02T18:15:10 IST" duration-ms="4515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:10 IST" name="verifyAlertMessageIsShownWithWrongPassword" finished-at="2024-12-02T18:15:12 IST" duration-ms="2332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:12 IST" name="terminateSession" finished-at="2024-12-02T18:15:13 IST" duration-ms="525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:13 IST" name="launchBrowser" finished-at="2024-12-02T18:15:18 IST" duration-ms="5745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:18 IST" name="verifyAlertMessageIsShownWithWrongUsername" finished-at="2024-12-02T18:15:20 IST" duration-ms="1576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:20 IST" name="terminateSession" finished-at="2024-12-02T18:15:21 IST" duration-ms="1036" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsername status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:21 IST" name="launchBrowser" finished-at="2024-12-02T18:15:26 IST" duration-ms="5065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:26 IST" name="verifyAlertMessageIsShownWithWrongUsernameAndPassword" finished-at="2024-12-02T18:15:28 IST" duration-ms="1784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsernameAndPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:28 IST" name="terminateSession" finished-at="2024-12-02T18:15:28 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsernameAndPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:28 IST" name="launchBrowser" finished-at="2024-12-02T18:15:33 IST" duration-ms="4845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:33 IST" name="verifyCSSAttributesofSignInButton" finished-at="2024-12-02T18:15:33 IST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCSSAttributesofSignInButton -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:33 IST" name="terminateSession" finished-at="2024-12-02T18:15:34 IST" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCSSAttributesofSignInButton status=SUCCESS method=LoginTest.verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:34 IST" name="launchBrowser" finished-at="2024-12-02T18:15:41 IST" duration-ms="7292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:41 IST" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" finished-at="2024-12-02T18:15:44 IST" duration-ms="3142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:44 IST" name="terminateSession" finished-at="2024-12-02T18:15:45 IST" duration-ms="557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox status=SUCCESS method=LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:45 IST" name="launchBrowser" finished-at="2024-12-02T18:15:50 IST" duration-ms="5132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:50 IST" name="verifyLoginIsAllowedUsingEnterKeyInKeyboard" finished-at="2024-12-02T18:15:52 IST" duration-ms="1915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsAllowedUsingEnterKeyInKeyboard -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:52 IST" name="terminateSession" finished-at="2024-12-02T18:15:53 IST" duration-ms="802" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsAllowedUsingEnterKeyInKeyboard status=SUCCESS method=LoginTest.verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:53 IST" name="launchBrowser" finished-at="2024-12-02T18:15:58 IST" duration-ms="5686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:58 IST" name="verifyLoginIsNotAllowedWithoutPassword" finished-at="2024-12-02T18:15:59 IST" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:59 IST" name="terminateSession" finished-at="2024-12-02T18:15:59 IST" duration-ms="491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutPassword status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:15:59 IST" name="launchBrowser" finished-at="2024-12-02T18:16:05 IST" duration-ms="5330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:16:05 IST" name="verifyLoginIsNotAllowedWithoutUsername" finished-at="2024-12-02T18:16:06 IST" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:16:06 IST" name="terminateSession" finished-at="2024-12-02T18:16:06 IST" duration-ms="826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutUsername status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:16:06 IST" name="launchBrowser" finished-at="2024-12-02T18:16:11 IST" duration-ms="4354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:16:11 IST" name="verifyRememberMeCheckboxIsEnabled" finished-at="2024-12-02T18:16:11 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberMeCheckboxIsEnabled -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53]" started-at="2024-12-02T18:16:11 IST" name="terminateSession" finished-at="2024-12-02T18:16:12 IST" duration-ms="521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRememberMeCheckboxIsEnabled status=SUCCESS method=LoginTest.verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@710c2b53] output={null}]]]>
               </value>
             </param>
           </params>
@@ -33,6 +229,1037 @@
           </reporter-output>
         </test-method> <!-- terminateSession -->
       </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- smoketest -->
+    <test started-at="2024-12-02T18:14:50 IST" name="sanity" finished-at="2024-12-02T18:16:22 IST" duration-ms="92727">
+      <class name="com.sevenrmartsupermart.tests.HomeTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:12 IST" name="launchBrowser" finished-at="2024-12-02T18:16:16 IST" duration-ms="3585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyHomePageOptions()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:16 IST" name="verifyHomePageOptions" finished-at="2024-12-02T18:16:17 IST" duration-ms="1538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageOptions -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:17 IST" name="terminateSession" finished-at="2024-12-02T18:16:17 IST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageOptions status=SUCCESS method=HomeTest.verifyHomePageOptions()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:17 IST" name="launchBrowser" finished-at="2024-12-02T18:16:21 IST" duration-ms="3498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:21 IST" name="verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount" finished-at="2024-12-02T18:16:22 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04]" started-at="2024-12-02T18:16:22 IST" name="terminateSession" finished-at="2024-12-02T18:16:22 IST" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount status=SUCCESS method=HomeTest.verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@14fc5f04] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.HomeTest -->
+      <class name="com.sevenrmartsupermart.tests.LoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:14:50 IST" name="launchBrowser" finished-at="2024-12-02T18:14:56 IST" duration-ms="6507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:14:56 IST" name="checkGroceryAppName" finished-at="2024-12-02T18:14:56 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGroceryAppName -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:14:56 IST" name="terminateSession" finished-at="2024-12-02T18:14:57 IST" duration-ms="685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkGroceryAppName status=SUCCESS method=LoginTest.checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:14:57 IST" name="launchBrowser" finished-at="2024-12-02T18:15:02 IST" duration-ms="5388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:02 IST" name="verifyAdminUserLogin" finished-at="2024-12-02T18:15:05 IST" duration-ms="2369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserLogin -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:05 IST" name="terminateSession" finished-at="2024-12-02T18:15:05 IST" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminUserLogin status=SUCCESS method=LoginTest.verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:05 IST" name="launchBrowser" finished-at="2024-12-02T18:15:10 IST" duration-ms="5047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:10 IST" name="verifyAlertMessageIsShownWithWrongPassword" finished-at="2024-12-02T18:15:12 IST" duration-ms="1734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:12 IST" name="terminateSession" finished-at="2024-12-02T18:15:12 IST" duration-ms="259" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:12 IST" name="launchBrowser" finished-at="2024-12-02T18:15:18 IST" duration-ms="5658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:18 IST" name="verifyAlertMessageIsShownWithWrongUsername" finished-at="2024-12-02T18:15:19 IST" duration-ms="1341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:19 IST" name="terminateSession" finished-at="2024-12-02T18:15:20 IST" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsername status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:20 IST" name="launchBrowser" finished-at="2024-12-02T18:15:24 IST" duration-ms="4605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:24 IST" name="verifyAlertMessageIsShownWithWrongUsernameAndPassword" finished-at="2024-12-02T18:15:28 IST" duration-ms="3461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsernameAndPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:28 IST" name="terminateSession" finished-at="2024-12-02T18:15:28 IST" duration-ms="738" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsernameAndPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:28 IST" name="launchBrowser" finished-at="2024-12-02T18:15:34 IST" duration-ms="5153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:34 IST" name="verifyCSSAttributesofSignInButton" finished-at="2024-12-02T18:15:34 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCSSAttributesofSignInButton -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:34 IST" name="terminateSession" finished-at="2024-12-02T18:15:34 IST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCSSAttributesofSignInButton status=SUCCESS method=LoginTest.verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:34 IST" name="launchBrowser" finished-at="2024-12-02T18:15:41 IST" duration-ms="6694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:41 IST" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" finished-at="2024-12-02T18:15:44 IST" duration-ms="3166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:44 IST" name="terminateSession" finished-at="2024-12-02T18:15:45 IST" duration-ms="456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox status=SUCCESS method=LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:45 IST" name="launchBrowser" finished-at="2024-12-02T18:15:49 IST" duration-ms="4299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:49 IST" name="verifyLoginIsAllowedUsingEnterKeyInKeyboard" finished-at="2024-12-02T18:15:51 IST" duration-ms="2389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsAllowedUsingEnterKeyInKeyboard -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:51 IST" name="terminateSession" finished-at="2024-12-02T18:15:53 IST" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsAllowedUsingEnterKeyInKeyboard status=SUCCESS method=LoginTest.verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:53 IST" name="launchBrowser" finished-at="2024-12-02T18:15:58 IST" duration-ms="5499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:58 IST" name="verifyLoginIsNotAllowedWithoutPassword" finished-at="2024-12-02T18:15:59 IST" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:59 IST" name="terminateSession" finished-at="2024-12-02T18:15:59 IST" duration-ms="656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutPassword status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:15:59 IST" name="launchBrowser" finished-at="2024-12-02T18:16:05 IST" duration-ms="5422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:16:05 IST" name="verifyLoginIsNotAllowedWithoutUsername" finished-at="2024-12-02T18:16:06 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:16:06 IST" name="terminateSession" finished-at="2024-12-02T18:16:06 IST" duration-ms="617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutUsername status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:16:06 IST" name="launchBrowser" finished-at="2024-12-02T18:16:11 IST" duration-ms="4806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:16:11 IST" name="verifyRememberMeCheckboxIsEnabled" finished-at="2024-12-02T18:16:12 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberMeCheckboxIsEnabled -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92]" started-at="2024-12-02T18:16:12 IST" name="terminateSession" finished-at="2024-12-02T18:16:12 IST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRememberMeCheckboxIsEnabled status=SUCCESS method=LoginTest.verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@33ecda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
+    </test> <!-- sanity -->
+    <test started-at="2024-12-02T18:14:50 IST" name="regression" finished-at="2024-12-02T18:18:35 IST" duration-ms="225223">
+      <class name="com.sevenrmartsupermart.tests.HomeTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:12 IST" name="launchBrowser" finished-at="2024-12-02T18:16:16 IST" duration-ms="3777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyHomePageOptions()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:16 IST" name="verifyHomePageOptions" finished-at="2024-12-02T18:16:18 IST" duration-ms="1539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageOptions -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:18 IST" name="terminateSession" finished-at="2024-12-02T18:16:18 IST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageOptions status=SUCCESS method=HomeTest.verifyHomePageOptions()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:18 IST" name="launchBrowser" finished-at="2024-12-02T18:16:21 IST" duration-ms="3561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:21 IST" name="verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount" finished-at="2024-12-02T18:16:23 IST" duration-ms="1523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381]" started-at="2024-12-02T18:16:23 IST" name="terminateSession" finished-at="2024-12-02T18:16:23 IST" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount status=SUCCESS method=HomeTest.verifyWhetherClickingOnLogoutButtonLogsOutAdminUserFromTheirAccount()[pri:0, instance:com.sevenrmartsupermart.tests.HomeTest@79207381] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.HomeTest -->
+      <class name="com.sevenrmartsupermart.tests.AdminUserTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:17:59 IST" name="launchBrowser" finished-at="2024-12-02T18:18:02 IST" duration-ms="2768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:02 IST" name="verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated" finished-at="2024-12-02T18:18:05 IST" duration-ms="2640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:05 IST" name="terminateSession" finished-at="2024-12-02T18:18:05 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated status=SUCCESS method=AdminUserTest.verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:05 IST" name="launchBrowser" finished-at="2024-12-02T18:18:07 IST" duration-ms="2789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyStatusChangeIsPossibleThroughLockButton()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:07 IST" name="verifyStatusChangeIsPossibleThroughLockButton" finished-at="2024-12-02T18:18:11 IST" duration-ms="3102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusChangeIsPossibleThroughLockButton -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:11 IST" name="terminateSession" finished-at="2024-12-02T18:18:11 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyStatusChangeIsPossibleThroughLockButton status=SUCCESS method=AdminUserTest.verifyStatusChangeIsPossibleThroughLockButton()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:11 IST" name="launchBrowser" finished-at="2024-12-02T18:18:14 IST" duration-ms="2545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:14 IST" name="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded" data-provider="NewAdminUser" finished-at="2024-12-02T18:18:16 IST" duration-ms="1923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Staff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:16 IST" name="terminateSession" finished-at="2024-12-02T18:18:16 IST" duration-ms="167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded status=SUCCESS method=AdminUserTest.verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:16 IST" name="launchBrowser" finished-at="2024-12-02T18:18:19 IST" duration-ms="2908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:19 IST" name="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded" data-provider="NewAdminUser" finished-at="2024-12-02T18:18:21 IST" duration-ms="2060" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:21 IST" name="terminateSession" finished-at="2024-12-02T18:18:21 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded status=SUCCESS method=AdminUserTest.verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:21 IST" name="launchBrowser" finished-at="2024-12-02T18:18:24 IST" duration-ms="2822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:24 IST" name="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded" data-provider="NewAdminUser" finished-at="2024-12-02T18:18:26 IST" duration-ms="2152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Partner]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:26 IST" name="terminateSession" finished-at="2024-12-02T18:18:26 IST" duration-ms="243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded status=SUCCESS method=AdminUserTest.verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:26 IST" name="launchBrowser" finished-at="2024-12-02T18:18:29 IST" duration-ms="2641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:29 IST" name="verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded" data-provider="NewAdminUser" finished-at="2024-12-02T18:18:31 IST" duration-ms="1814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Delivery Boy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:31 IST" name="terminateSession" finished-at="2024-12-02T18:18:31 IST" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded status=SUCCESS method=AdminUserTest.verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:31 IST" name="launchBrowser" finished-at="2024-12-02T18:18:33 IST" duration-ms="2811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyWhetherAdminUserListHasAllRequiredColoumns()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:33 IST" name="verifyWhetherAdminUserListHasAllRequiredColoumns" finished-at="2024-12-02T18:18:35 IST" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherAdminUserListHasAllRequiredColoumns -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6]" started-at="2024-12-02T18:18:35 IST" name="terminateSession" finished-at="2024-12-02T18:18:35 IST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherAdminUserListHasAllRequiredColoumns status=SUCCESS method=AdminUserTest.verifyWhetherAdminUserListHasAllRequiredColoumns()[pri:0, instance:com.sevenrmartsupermart.tests.AdminUserTest@1a4927d6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.AdminUserTest -->
+      <class name="com.sevenrmartsupermart.tests.LoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:14:50 IST" name="launchBrowser" finished-at="2024-12-02T18:14:56 IST" duration-ms="6487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:14:56 IST" name="checkGroceryAppName" finished-at="2024-12-02T18:14:56 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGroceryAppName -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:14:56 IST" name="terminateSession" finished-at="2024-12-02T18:14:57 IST" duration-ms="559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkGroceryAppName status=SUCCESS method=LoginTest.checkGroceryAppName()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:14:57 IST" name="launchBrowser" finished-at="2024-12-02T18:15:02 IST" duration-ms="5399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:02 IST" name="verifyAdminUserLogin" finished-at="2024-12-02T18:15:05 IST" duration-ms="2280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminUserLogin -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:05 IST" name="terminateSession" finished-at="2024-12-02T18:15:05 IST" duration-ms="525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdminUserLogin status=SUCCESS method=LoginTest.verifyAdminUserLogin()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:05 IST" name="launchBrowser" finished-at="2024-12-02T18:15:10 IST" duration-ms="4763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:10 IST" name="verifyAlertMessageIsShownWithWrongPassword" finished-at="2024-12-02T18:15:12 IST" duration-ms="1826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:12 IST" name="terminateSession" finished-at="2024-12-02T18:15:13 IST" duration-ms="883" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:13 IST" name="launchBrowser" finished-at="2024-12-02T18:15:18 IST" duration-ms="5238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:18 IST" name="verifyAlertMessageIsShownWithWrongUsername" finished-at="2024-12-02T18:15:20 IST" duration-ms="1690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:20 IST" name="terminateSession" finished-at="2024-12-02T18:15:20 IST" duration-ms="587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsername status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:20 IST" name="launchBrowser" finished-at="2024-12-02T18:15:26 IST" duration-ms="5878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:26 IST" name="verifyAlertMessageIsShownWithWrongUsernameAndPassword" finished-at="2024-12-02T18:15:28 IST" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertMessageIsShownWithWrongUsernameAndPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:28 IST" name="terminateSession" finished-at="2024-12-02T18:15:28 IST" duration-ms="301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAlertMessageIsShownWithWrongUsernameAndPassword status=SUCCESS method=LoginTest.verifyAlertMessageIsShownWithWrongUsernameAndPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:28 IST" name="launchBrowser" finished-at="2024-12-02T18:15:33 IST" duration-ms="4818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:33 IST" name="verifyCSSAttributesofSignInButton" finished-at="2024-12-02T18:15:34 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCSSAttributesofSignInButton -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:34 IST" name="terminateSession" finished-at="2024-12-02T18:15:34 IST" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCSSAttributesofSignInButton status=SUCCESS method=LoginTest.verifyCSSAttributesofSignInButton()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:34 IST" name="launchBrowser" finished-at="2024-12-02T18:15:41 IST" duration-ms="6855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:41 IST" name="verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox" finished-at="2024-12-02T18:15:44 IST" duration-ms="3369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:44 IST" name="terminateSession" finished-at="2024-12-02T18:15:44 IST" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox status=SUCCESS method=LoginTest.verifyLoginDetailsAreSavedAfterClickingRememberMeCheckBox()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:44 IST" name="launchBrowser" finished-at="2024-12-02T18:15:50 IST" duration-ms="5889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:50 IST" name="verifyLoginIsAllowedUsingEnterKeyInKeyboard" finished-at="2024-12-02T18:15:52 IST" duration-ms="1667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsAllowedUsingEnterKeyInKeyboard -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:52 IST" name="terminateSession" finished-at="2024-12-02T18:15:52 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsAllowedUsingEnterKeyInKeyboard status=SUCCESS method=LoginTest.verifyLoginIsAllowedUsingEnterKeyInKeyboard()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:52 IST" name="launchBrowser" finished-at="2024-12-02T18:15:58 IST" duration-ms="5836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:58 IST" name="verifyLoginIsNotAllowedWithoutPassword" finished-at="2024-12-02T18:15:59 IST" duration-ms="834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutPassword -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:59 IST" name="terminateSession" finished-at="2024-12-02T18:15:59 IST" duration-ms="398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutPassword status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutPassword()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:15:59 IST" name="launchBrowser" finished-at="2024-12-02T18:16:05 IST" duration-ms="5761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:16:05 IST" name="verifyLoginIsNotAllowedWithoutUsername" finished-at="2024-12-02T18:16:06 IST" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIsNotAllowedWithoutUsername -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:16:06 IST" name="terminateSession" finished-at="2024-12-02T18:16:07 IST" duration-ms="556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginIsNotAllowedWithoutUsername status=SUCCESS method=LoginTest.verifyLoginIsNotAllowedWithoutUsername()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:16:07 IST" name="launchBrowser" finished-at="2024-12-02T18:16:12 IST" duration-ms="5039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:16:12 IST" name="verifyRememberMeCheckboxIsEnabled" finished-at="2024-12-02T18:16:12 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberMeCheckboxIsEnabled -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693]" started-at="2024-12-02T18:16:12 IST" name="terminateSession" finished-at="2024-12-02T18:16:12 IST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRememberMeCheckboxIsEnabled status=SUCCESS method=LoginTest.verifyRememberMeCheckboxIsEnabled()[pri:0, instance:com.sevenrmartsupermart.tests.LoginTest@60f00693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.LoginTest -->
+      <class name="com.sevenrmartsupermart.tests.SubCategoryTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:23 IST" name="launchBrowser" finished-at="2024-12-02T18:16:26 IST" duration-ms="2688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyIfCategoryCanBeDeletedFromSubCategoryList()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:26 IST" name="verifyIfCategoryCanBeDeletedFromSubCategoryList" finished-at="2024-12-02T18:16:40 IST" duration-ms="14397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIfCategoryCanBeDeletedFromSubCategoryList -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:40 IST" name="terminateSession" finished-at="2024-12-02T18:16:40 IST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyIfCategoryCanBeDeletedFromSubCategoryList status=SUCCESS method=SubCategoryTest.verifyIfCategoryCanBeDeletedFromSubCategoryList()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:40 IST" name="launchBrowser" finished-at="2024-12-02T18:16:43 IST" duration-ms="2556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:43 IST" name="verifyNewCategoryCanBeCreatedWithImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:16:45 IST" duration-ms="2409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vegetables]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:45 IST" name="terminateSession" finished-at="2024-12-02T18:16:45 IST" duration-ms="163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:45 IST" name="launchBrowser" finished-at="2024-12-02T18:16:48 IST" duration-ms="2516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:48 IST" name="verifyNewCategoryCanBeCreatedWithImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:16:50 IST" duration-ms="2465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Grocery]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:50 IST" name="terminateSession" finished-at="2024-12-02T18:16:51 IST" duration-ms="157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:51 IST" name="launchBrowser" finished-at="2024-12-02T18:16:53 IST" duration-ms="2643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:53 IST" name="verifyNewCategoryCanBeCreatedWithImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:16:56 IST" duration-ms="2248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:56 IST" name="terminateSession" finished-at="2024-12-02T18:16:56 IST" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:56 IST" name="launchBrowser" finished-at="2024-12-02T18:16:59 IST" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:16:59 IST" name="verifyNewCategoryCanBeCreatedWithImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:17:01 IST" duration-ms="2615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Appliances]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:01 IST" name="terminateSession" finished-at="2024-12-02T18:17:01 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:01 IST" name="launchBrowser" finished-at="2024-12-02T18:17:04 IST" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:04 IST" name="verifyNewCategoryCanBeCreatedWithoutImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:17:06 IST" duration-ms="2218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vegetables]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithoutImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:06 IST" name="terminateSession" finished-at="2024-12-02T18:17:06 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithoutImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:06 IST" name="launchBrowser" finished-at="2024-12-02T18:17:09 IST" duration-ms="2963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:09 IST" name="verifyNewCategoryCanBeCreatedWithoutImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:17:12 IST" duration-ms="2268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Grocery]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithoutImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:12 IST" name="terminateSession" finished-at="2024-12-02T18:17:12 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithoutImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:12 IST" name="launchBrowser" finished-at="2024-12-02T18:17:15 IST" duration-ms="3189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:15 IST" name="verifyNewCategoryCanBeCreatedWithoutImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:17:17 IST" duration-ms="2180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithoutImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:17 IST" name="terminateSession" finished-at="2024-12-02T18:17:17 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithoutImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:17 IST" name="launchBrowser" finished-at="2024-12-02T18:17:20 IST" duration-ms="2629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:20 IST" name="verifyNewCategoryCanBeCreatedWithoutImage" data-provider="NewSubCategory" finished-at="2024-12-02T18:17:22 IST" duration-ms="2328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Appliances]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeCreatedWithoutImage -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:22 IST" name="terminateSession" finished-at="2024-12-02T18:17:23 IST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeCreatedWithoutImage status=SUCCESS method=SubCategoryTest.verifyNewCategoryCanBeCreatedWithoutImage(java.lang.String)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:23 IST" name="launchBrowser" finished-at="2024-12-02T18:17:25 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyNewCategoryIsShownFirstInTable()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:25 IST" name="verifyNewCategoryIsShownFirstInTable" finished-at="2024-12-02T18:17:28 IST" duration-ms="2378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryIsShownFirstInTable -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:28 IST" name="terminateSession" finished-at="2024-12-02T18:17:28 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryIsShownFirstInTable status=SUCCESS method=SubCategoryTest.verifyNewCategoryIsShownFirstInTable()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:28 IST" name="launchBrowser" finished-at="2024-12-02T18:17:30 IST" duration-ms="2658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySubCategoryCanBeUpdated()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:30 IST" name="verifySubCategoryCanBeUpdated" finished-at="2024-12-02T18:17:35 IST" duration-ms="4417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubCategoryCanBeUpdated -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:35 IST" name="terminateSession" finished-at="2024-12-02T18:17:35 IST" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubCategoryCanBeUpdated status=SUCCESS method=SubCategoryTest.verifySubCategoryCanBeUpdated()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:35 IST" name="launchBrowser" finished-at="2024-12-02T18:17:38 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySubCategoryCannotBeSearchedWithoutSelectingCategory()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:38 IST" name="verifySubCategoryCannotBeSearchedWithoutSelectingCategory" finished-at="2024-12-02T18:17:39 IST" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubCategoryCannotBeSearchedWithoutSelectingCategory -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:39 IST" name="terminateSession" finished-at="2024-12-02T18:17:39 IST" duration-ms="165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubCategoryCannotBeSearchedWithoutSelectingCategory status=SUCCESS method=SubCategoryTest.verifySubCategoryCannotBeSearchedWithoutSelectingCategory()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:39 IST" name="launchBrowser" finished-at="2024-12-02T18:17:42 IST" duration-ms="2823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySubCategoryListUsingSearchButton()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:42 IST" name="verifySubCategoryListUsingSearchButton" finished-at="2024-12-02T18:17:44 IST" duration-ms="1885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubCategoryListUsingSearchButton -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:44 IST" name="terminateSession" finished-at="2024-12-02T18:17:44 IST" duration-ms="202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubCategoryListUsingSearchButton status=SUCCESS method=SubCategoryTest.verifySubCategoryListUsingSearchButton()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:44 IST" name="launchBrowser" finished-at="2024-12-02T18:17:47 IST" duration-ms="2960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifySubCategoryListUsingSearchButtonWithWrongData()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:47 IST" name="verifySubCategoryListUsingSearchButtonWithWrongData" finished-at="2024-12-02T18:17:49 IST" duration-ms="1632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubCategoryListUsingSearchButtonWithWrongData -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:49 IST" name="terminateSession" finished-at="2024-12-02T18:17:49 IST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySubCategoryListUsingSearchButtonWithWrongData status=SUCCESS method=SubCategoryTest.verifySubCategoryListUsingSearchButtonWithWrongData()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:49 IST" name="launchBrowser" finished-at="2024-12-02T18:17:51 IST" duration-ms="2659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:51 IST" name="verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated" finished-at="2024-12-02T18:17:55 IST" duration-ms="3303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:55 IST" name="terminateSession" finished-at="2024-12-02T18:17:55 IST" duration-ms="169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated status=SUCCESS method=SubCategoryTest.verifyTwoCategoriesWithSameSubCategoryNameCannotBeCreated()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:55 IST" name="launchBrowser" finished-at="2024-12-02T18:17:57 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyWhetherSearchFieldCanBeReset()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:57 IST" name="verifyWhetherSearchFieldCanBeReset" finished-at="2024-12-02T18:17:59 IST" duration-ms="1557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWhetherSearchFieldCanBeReset -->
+        <test-method is-config="true" signature="terminateSession(org.testng.ITestResult)[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8]" started-at="2024-12-02T18:17:59 IST" name="terminateSession" finished-at="2024-12-02T18:17:59 IST" duration-ms="121" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWhetherSearchFieldCanBeReset status=SUCCESS method=SubCategoryTest.verifyWhetherSearchFieldCanBeReset()[pri:0, instance:com.sevenrmartsupermart.tests.SubCategoryTest@491b9b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminateSession -->
+      </class> <!-- com.sevenrmartsupermart.tests.SubCategoryTest -->
+    </test> <!-- regression -->
+  </suite> <!-- groceryapprelease -->
 </testng-results>

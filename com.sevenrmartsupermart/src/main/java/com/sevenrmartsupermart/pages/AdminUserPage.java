@@ -14,7 +14,7 @@ import com.sevenrmartsupermart.utilities.PageUtility;
 
 public class AdminUserPage {
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//thead//th")
 	private List<WebElement> tableColumns;
 	@FindBy(xpath = "//a[@onclick='click_button(1)']")
@@ -39,47 +39,41 @@ public class AdminUserPage {
 	private WebElement userTypeFieldFromSearch;
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")
 	private List<WebElement> userNameList;
-	
-	
+
 	public AdminUserPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	public List<String> getTableColumn(){
+
+	public List<String> getTableColumn() {
 		GeneralUtility generalutility = new GeneralUtility(driver);
-		List<String> columns=new ArrayList<String>();
-		columns=generalutility.getTextOfElements(tableColumns);
+		List<String> columns = new ArrayList<String>();
+		columns = generalutility.getTextOfElements(tableColumns);
 		return columns;
 	}
-	
-	public void clickNewAdminUserButton()
-	{
+
+	public void clickNewAdminUserButton() {
 		newButton.click();
 	}
-	
-	public void enterUserName(String userName)
-	{
+
+	public void enterUserName(String userName) {
 		userNameField.sendKeys(userName);
 	}
-	
-	public void enterPassword(String password)
-	{
+
+	public void enterPassword(String password) {
 		passwordField.sendKeys(password);
 	}
-	
-	public void selectUserType(String userType)
-	{
-		PageUtility pageutility=new PageUtility(driver);
+
+	public void selectUserType(String userType) {
+		PageUtility pageutility = new PageUtility(driver);
 		pageutility.select_ByVisibleText(userTypeField, userType);
 	}
-	
-	public void clickSaveButton()
-	{
-		PageUtility pageutility=new PageUtility(driver);
+
+	public void clickSaveButton() {
+		PageUtility pageutility = new PageUtility(driver);
 		pageutility.scrollAndClick(saveButton);
 	}
-	
+
 	public void createNewAdminUser(String userName, String password, String userType) {
 
 		clickNewAdminUserButton();
@@ -88,70 +82,64 @@ public class AdminUserPage {
 		selectUserType(userType);
 		clickSaveButton();
 	}
-	
-	public String getSuccessAlertMessage()
-	{
-		return successAlert.getText();
+
+	public String getSuccessAlertMessage() {
+		PageUtility pageutility = new PageUtility(driver);
+		return pageutility.waitAndGetText(successAlert);
 	}
-	
-	public String returnFirstRowOfTable()
-	{
+
+	public String returnFirstRowOfTable() {
 		return firstRowOfAdminUserList.getText();
 	}
-	
-	public String getFailureAlert()
-	{
+
+	public String getFailureAlert() {
 		return failureAlert.getText();
 	}
-	
-	public void statusChangeButton()
-	{
+
+	public void statusChangeButton() {
 		statusButton.click();
 	}
-	
-	public void clickStatusButton(String userName)
-	{
-			GeneralUtility generalutility=new GeneralUtility(driver);
-			PageUtility pageutility=new PageUtility(driver);
-			List<String> adminUser=new ArrayList<String>();
-			adminUser=generalutility.getTextOfElements(userNameList);
-			
-			int index=0;
-			for(index=0;index<adminUser.size();index++)
-			{
-				if(userName.equals(adminUser.get(index)))
-				{
-					index++;
-					break;
-				}
-				
+
+	public void clickStatusButton(String userName) {
+		GeneralUtility generalutility = new GeneralUtility(driver);
+		PageUtility pageutility = new PageUtility(driver);
+		List<String> adminUser = new ArrayList<String>();
+		adminUser = generalutility.getTextOfElements(userNameList);
+
+		int index = 0;
+		for (index = 0; index < adminUser.size(); index++) {
+			if (userName.equals(adminUser.get(index))) {
+				index++;
+				break;
 			}
-			WebElement update=driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+index+"]//td//a[@class='btn btn-sm btn btn-success btncss']"));
-			pageutility.moveToElement(update);
-			update.click();
+
+		}
+		WebElement update = driver
+				.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + index
+						+ "]//td//a[@class='btn btn-sm btn btn-success btncss']"));
+		pageutility.moveToElement(update);
+		update.click();
 	}
-	
-	public String getStatusChange(String userName)
-	{
-			GeneralUtility generalutility=new GeneralUtility(driver);
-			PageUtility pageutility=new PageUtility(driver);
-			List<String> adminUser=new ArrayList<String>();
-			adminUser=generalutility.getTextOfElements(userNameList);
-			
-			int index=0;
-			for(index=0;index<adminUser.size();index++)
-			{
-				if(userName.equals(adminUser.get(index)))
-				{
-					index++;
-					break;
-				}
-				
+
+	public String getStatusChange(String userName) {
+		GeneralUtility generalutility = new GeneralUtility(driver);
+		PageUtility pageutility = new PageUtility(driver);
+		List<String> adminUser = new ArrayList<String>();
+		adminUser = generalutility.getTextOfElements(userNameList);
+
+		int index = 0;
+		for (index = 0; index < adminUser.size(); index++) {
+			if (userName.equals(adminUser.get(index))) {
+				index++;
+				break;
 			}
-			WebElement status=driver.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr["+index+"]//td//a[@role='button']//span"));
-			pageutility.moveToElement(status);
-			return status.getText();
+
+		}
+		WebElement status = driver
+				.findElement(By.xpath("//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + index
+						+ "]//td//a[@role='button']//span"));
+		pageutility.moveToElement(status);
+		return status.getText();
 	}
-	
-	
+
 }

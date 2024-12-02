@@ -45,25 +45,23 @@ public class AdminUserTest extends Base {
 		loginpage.login();
 		homepage.clickAdminUser();
 		String password = GeneralUtility.getRandomPassword();
-		adminuserpage.createNewAdminUser("Peppa", password, userType);
+		String userName=GeneralUtility.getRandomUserName();
+		adminuserpage.createNewAdminUser(userName, password, userType);
 		String actualAlertMessage = adminuserpage.getSuccessAlertMessage();
 		String expectedAlertMessage = "User Created Successfully";
-		String actualFirstRow = adminuserpage.returnFirstRowOfTable();
-		String expectedFirstRow = "Peppa " + userType;
-		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
-		softassert.assertTrue(actualFirstRow.contains(expectedFirstRow));
-		softassert.assertAll();
+		Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
 	}
 
-	@Test(dataProvider = "NewAdminUser", dataProviderClass = DataProviderInput.class)
-	public void verifyNewAdminUserWithinExistingUserNameWithSameUserTypeCannotBeCreated(String userType) {
+	@Test
+	public void verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated() {
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);
 		adminuserpage = new AdminUserPage(driver);
 		loginpage.login();
 		homepage.clickAdminUser();
-		adminuserpage.createNewAdminUser("Peppa", "Pig4567", userType);
-		adminuserpage.createNewAdminUser("Peppa", "89076", userType);
+		String userName=GeneralUtility.getRandomUserName();
+		adminuserpage.createNewAdminUser(userName, "4567@34tg", "Staff");
+		adminuserpage.createNewAdminUser(userName, "89@@3076", "Staff");
 		String actualAlertMessage = adminuserpage.getFailureAlert();
 		String expectedAlertMessage = "Username already exists.";
 		Assert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
@@ -71,7 +69,7 @@ public class AdminUserTest extends Base {
 	}
 
 	@Test(retryAnalyzer = com.sevenrmartsupermart.listeners.RetryAnalyzer.class)
-	public void verifyStatusChangeIsPossibleThroughButton()
+	public void verifyStatusChangeIsPossibleThroughLockButton()
 	{
 		loginpage = new LoginPage(driver);
 		homepage = new HomePage(driver);

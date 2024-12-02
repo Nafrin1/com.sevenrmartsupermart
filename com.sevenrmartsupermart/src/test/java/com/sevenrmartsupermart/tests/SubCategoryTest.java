@@ -77,8 +77,8 @@ public class SubCategoryTest extends Base {
 	@Test(dataProvider = "NewSubCategory", dataProviderClass = DataProviderInput.class)
 	public void verifyNewCategoryCanBeCreatedWithoutImage(String category) {
 		loginpage = new LoginPage(driver);
-		homepage=loginpage.login();
-		subcategorypage=homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithNoImage(category, subCategory);
 		String actualAlertMessage = subcategorypage.showSuccessfullySavedSubCategoryAlert();
@@ -147,22 +147,21 @@ public class SubCategoryTest extends Base {
 		String expectedAlertMessage = "Sub Category already exists.";
 		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
 	}
-	
+
 	@Test
-	public void verifyIfCategoryCanBeDeletedFromSubCategoryList()
-	{
-			loginpage = new LoginPage(driver);
-			homepage = loginpage.login();
-			subcategorypage = homepage.clickSubCategory();
-			String subCategory = GeneralUtility.getRandomName();
-			subcategorypage.createNewCategoryWithNoImage("Grocery", subCategory);
-			subcategorypage.openSubCategoryFromSideMenu();
-			String actualAlertMessage=subcategorypage.returnAlertMessageForDeletion(subCategory);
-			String expectedAlertMessage="Sub Category Deleted Successfully";
-			boolean actualDeletionStatus = subcategorypage.isSubCategoryNotPresent("Grocery", subCategory);
-			softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
-			softassert.assertTrue(actualDeletionStatus, "SubCategory has not been deleted as expected!");
-			softassert.assertAll();
+	public void verifyIfCategoryCanBeDeletedFromSubCategoryList() {
+		loginpage = new LoginPage(driver);
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
+		String subCategory = GeneralUtility.getRandomName();
+		subcategorypage.createNewCategoryWithNoImage("Grocery", subCategory);
+		subcategorypage.openSubCategoryFromSideMenu();
+		String actualAlertMessage = subcategorypage.returnAlertMessageForDeletion(subCategory);
+		String expectedAlertMessage = "Sub Category Deleted Successfully";
+		boolean actualDeletionStatus = subcategorypage.isSubCategoryNotPresent("Grocery", subCategory);
+		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage));
+		softassert.assertTrue(actualDeletionStatus, "SubCategory has not been deleted as expected!");
+		softassert.assertAll();
 	}
 
 }

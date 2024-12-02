@@ -18,7 +18,7 @@ import com.sevenrmartsupermart.utilities.WaitUtility;
 public class LoginPage {
 	WebDriver driver;
 	Properties properties = new Properties();
-	
+
 	@CacheLookup
 	@FindBy(xpath = "//input[@type='text']")
 	private WebElement userNameField;
@@ -64,43 +64,38 @@ public class LoginPage {
 		return new HomePage(driver);
 
 	}
-	
-	public HomePage login()
-	{
-		String userName=properties.getProperty("username");
-		String password=properties.getProperty("password");
+
+	public HomePage login() {
+		String userName = properties.getProperty("username");
+		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
 		clickSignInButton();
 		return new HomePage(driver);
 	}
-	
-	public void loginWithRememberMeCheckBox()
-	{
-		String userName=properties.getProperty("username");
-		String password=properties.getProperty("password");
+
+	public void loginWithRememberMeCheckBox() {
+		String userName = properties.getProperty("username");
+		String password = properties.getProperty("password");
 		enterUserName(userName);
 		enterPassword(password);
 		clickRememberMeCheckBox();
 		clickSignInButton();
 	}
-	
-	public void clickRememberMeCheckBox()
-	{
+
+	public void clickRememberMeCheckBox() {
 		rememberMeCheckBox.click();
 	}
-	
-	public boolean returnCheckBoxEnableStatus()
-	{
+
+	public boolean returnCheckBoxEnableStatus() {
 		clickRememberMeCheckBox();
 		return rememberMeCheckBox.isEnabled();
 	}
-	
-	public String nameOfGroceryApp()
-	{
+
+	public String nameOfGroceryApp() {
 		return groceryStoreName.getText();
 	}
-	
+
 	public String getValueAttributeOfUserNameField() {
 		WaitUtility waitutility = new WaitUtility(driver);
 		String userNamePath = "//input[@name='username']";
@@ -116,7 +111,7 @@ public class LoginPage {
 		WebElement passwordField = driver.findElement(By.xpath(passwordPath));
 		return passwordField.getAttribute("value");
 	}
-	
+
 	public void loginWithoutPassword(String userName) {
 		enterUserName(userName);
 		clickSignInButton();
@@ -128,57 +123,49 @@ public class LoginPage {
 		clickSignInButton();
 
 	}
-	
-	public boolean alertTextIsDisplayed()
-	{
+
+	public boolean alertTextIsDisplayed() {
 		return loginAlert.isDisplayed();
-		}
-	
-	public String getColorOfElement()
-	{
-		GeneralUtility generalutility=new GeneralUtility(driver);
+	}
+
+	public String getColorOfElement() {
+		GeneralUtility generalutility = new GeneralUtility(driver);
 		return generalutility.getCssProperty(signInButton, "background-color");
 	}
-	
-	public String getColorOfText()
-	{
-		GeneralUtility generalutility=new GeneralUtility(driver);
+
+	public String getColorOfText() {
+		GeneralUtility generalutility = new GeneralUtility(driver);
 		return generalutility.getCssProperty(signInButton, "color");
 	}
-	
-	public String getFontSize()
-	{
-		GeneralUtility generalutility=new GeneralUtility(driver);
+
+	public String getFontSize() {
+		GeneralUtility generalutility = new GeneralUtility(driver);
 		return generalutility.getCssProperty(signInButton, "font-size");
 	}
-	
-	public String getFontStyle()
-	{		
-		GeneralUtility generalutility=new GeneralUtility(driver);
+
+	public String getFontStyle() {
+		GeneralUtility generalutility = new GeneralUtility(driver);
 		return generalutility.getCssProperty(signInButton, "font-style");
 	}
-	
-	public void enterPasswordAndClickEnterKey()
-	{
-		PageUtility pageutility=new PageUtility(driver);
-		String password=properties.getProperty("password");
-		pageutility.clickEnterKey(passwordField,password);
+
+	public void enterPasswordAndClickEnterKey() {
+		PageUtility pageutility = new PageUtility(driver);
+		String password = properties.getProperty("password");
+		pageutility.clickEnterKey(passwordField, password);
 	}
-	
-	public void loginUsingEnterKey()
-	{
-		String userName=properties.getProperty("username");
+
+	public void loginUsingEnterKey() {
+		String userName = properties.getProperty("username");
 		enterUserName(userName);
 		enterPasswordAndClickEnterKey();
 	}
-	
+
 	public String getTabName() {
 		return driver.getTitle();
 	}
-	
-	public boolean signInButtonIsDisplayed()
-	{
-		PageUtility pageutility=new PageUtility(driver);
+
+	public boolean signInButtonIsDisplayed() {
+		PageUtility pageutility = new PageUtility(driver);
 		return pageutility.isDisplayed(signInButton);
 	}
 }

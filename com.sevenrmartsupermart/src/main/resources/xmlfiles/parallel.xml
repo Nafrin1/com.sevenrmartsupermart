@@ -22,6 +22,7 @@
 			<class name="com.sevenrmartsupermart.tests.LoginTest"></class>
 			<class name="com.sevenrmartsupermart.tests.HomeTest"></class>
 			<class name="com.sevenrmartsupermart.tests.SubCategoryTest"></class>
+			<class name="com.sevenrmartsupermart.tests.AdminUserTest"></class>
 		</classes>
 	</test>
 </suite>

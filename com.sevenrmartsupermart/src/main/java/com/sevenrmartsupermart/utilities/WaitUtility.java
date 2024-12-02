@@ -20,15 +20,13 @@ public class WaitUtility {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-	
-	public void waitForElementToBeVisible(WebElement element, long duration)
-	{
+
+	public void waitForElementToBeVisible(WebElement element, long duration) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
-	public void waitForElementToBeVisibleByXpath(String path, long duration)
-	{
+
+	public void waitForElementToBeVisibleByXpath(String path, long duration) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(path)));
 	}
