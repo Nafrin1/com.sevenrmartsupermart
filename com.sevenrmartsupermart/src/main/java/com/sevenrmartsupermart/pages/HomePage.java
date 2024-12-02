@@ -62,8 +62,9 @@ public class HomePage {
 		return pageutility.isDisplayed(settingsButton);
 	}
 
-	public void clickAdminUser() {
+	public AdminUserPage clickAdminUser() {
 		adminUser.click();
+		return new AdminUserPage(driver);
 	}
 
 }

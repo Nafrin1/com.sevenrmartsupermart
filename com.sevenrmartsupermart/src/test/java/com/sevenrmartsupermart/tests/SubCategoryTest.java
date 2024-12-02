@@ -23,10 +23,8 @@ public class SubCategoryTest extends Base {
 	@Test
 	public void verifySubCategoryListUsingSearchButton() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		subcategorypage.searchSubCategoryWithData("Electronics", "Speaker");
 		String actualData = subcategorypage.getSearchResult();
 		String expectedData = "Speaker Electronics Active";
@@ -37,10 +35,8 @@ public class SubCategoryTest extends Base {
 	@Test(groups = "Smoke")
 	public void verifySubCategoryListUsingSearchButtonWithWrongData() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		subcategorypage.searchSubCategoryWithData("Electronics", "abcd");
 		String actualData = subcategorypage.getSearchResult();
 		String expectedData = ".........RESULT NOT FOUND.......";
@@ -51,10 +47,8 @@ public class SubCategoryTest extends Base {
 	@Test(groups = "Sanity")
 	public void verifyWhetherSearchFieldCanBeReset() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		subcategorypage.resetSubCategoryWithData("Electronics", "acd");
 		boolean actualstatus = subcategorypage.checkSearchListSubCategoriesDisplayed();
 		Assert.assertFalse(actualstatus);
@@ -63,10 +57,8 @@ public class SubCategoryTest extends Base {
 	@Test(dataProvider = "NewSubCategory", dataProviderClass = DataProviderInput.class)
 	public void verifyNewCategoryCanBeCreatedWithImage(String category) {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		subcategorypage = new SubCategoryPage(driver);
-		loginpage.login();
-		homepage.clickSubCategory();
+		homepage = loginpage.login();
+		subcategorypage = homepage.clickSubCategory();
 		String subCategory = GeneralUtility.getRandomName();
 		subcategorypage.createNewCategoryWithImage(category, subCategory);
 		String actualAlertMessage = subcategorypage.showSuccessfullySavedSubCategoryAlert();

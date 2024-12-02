@@ -23,10 +23,8 @@ public class AdminUserTest extends Base {
 	@Test
 	public void verifyWhetherAdminUserListHasAllRequiredColoumns() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		adminuserpage = new AdminUserPage(driver);
-		loginpage.login();
-		homepage.clickAdminUser();
+		homepage = loginpage.login();
+		adminuserpage = homepage.clickAdminUser();
 		List<String> actualColumnList = adminuserpage.getTableColumn();
 		List<String> expectedColumnList = new ArrayList<String>();
 		expectedColumnList.add("Username");
@@ -40,12 +38,10 @@ public class AdminUserTest extends Base {
 	@Test(dataProvider = "NewAdminUser", dataProviderClass = DataProviderInput.class)
 	public void verifyThatNewAdminUsersWithDifferentUserTypeCanBeAdded(String userType) {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		adminuserpage = new AdminUserPage(driver);
-		loginpage.login();
-		homepage.clickAdminUser();
+		homepage = loginpage.login();
+		adminuserpage = homepage.clickAdminUser();
 		String password = GeneralUtility.getRandomPassword();
-		String userName=GeneralUtility.getRandomUserName();
+		String userName = GeneralUtility.getRandomUserName();
 		adminuserpage.createNewAdminUser(userName, password, userType);
 		String actualAlertMessage = adminuserpage.getSuccessAlertMessage();
 		String expectedAlertMessage = "User Created Successfully";
@@ -55,11 +51,9 @@ public class AdminUserTest extends Base {
 	@Test
 	public void verifyNewAdminUserWithExistingUserNameWithinSameUserTypeCannotBeCreated() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		adminuserpage = new AdminUserPage(driver);
-		loginpage.login();
-		homepage.clickAdminUser();
-		String userName=GeneralUtility.getRandomUserName();
+		homepage = loginpage.login();
+		adminuserpage = homepage.clickAdminUser();
+		String userName = GeneralUtility.getRandomUserName();
 		adminuserpage.createNewAdminUser(userName, "4567@34tg", "Staff");
 		adminuserpage.createNewAdminUser(userName, "89@@3076", "Staff");
 		String actualAlertMessage = adminuserpage.getFailureAlert();
@@ -69,22 +63,19 @@ public class AdminUserTest extends Base {
 	}
 
 	@Test(retryAnalyzer = com.sevenrmartsupermart.listeners.RetryAnalyzer.class)
-	public void verifyStatusChangeIsPossibleThroughLockButton()
-	{
+	public void verifyStatusChangeIsPossibleThroughLockButton() {
 		loginpage = new LoginPage(driver);
-		homepage = new HomePage(driver);
-		adminuserpage = new AdminUserPage(driver);
-		loginpage.login();
-		homepage.clickAdminUser();
-		String userName=GeneralUtility.getRandomName();
+		homepage = loginpage.login();
+		adminuserpage = homepage.clickAdminUser();
+		String userName = GeneralUtility.getRandomName();
 		adminuserpage.createNewAdminUser(userName, "4567", "Staff");
 		adminuserpage.clickStatusButton(userName);
-		String actualAlertMessage=adminuserpage.getSuccessAlertMessage();
-		String expectedAlertMessage="User Status Changed Successfully";
-		String actualStatus=adminuserpage.getStatusChange(userName);
-		String expectedStatus="Inactive";
-		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage),"Status Change was not successfull");
-		softassert.assertTrue(actualStatus.contains(expectedStatus),"Does not show correct Status");
+		String actualAlertMessage = adminuserpage.getSuccessAlertMessage();
+		String expectedAlertMessage = "User Status Changed Successfully";
+		String actualStatus = adminuserpage.getStatusChange(userName);
+		String expectedStatus = "Inactive";
+		softassert.assertTrue(actualAlertMessage.contains(expectedAlertMessage), "Status Change was not successfull");
+		softassert.assertTrue(actualStatus.contains(expectedStatus), "Does not show correct Status");
 		softassert.assertAll();
 	}
 }
