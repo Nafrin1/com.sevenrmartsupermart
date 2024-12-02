@@ -5,7 +5,7 @@
     <classes>
       <class name="com.sevenrmartsupermart.tests.AdminUserTest">
         <methods>
-          <include name="verifyUserTypeInSearchContainsAllOptions"/>
+          <include name="verifyStatusChangeIsPossibleThroughButton"/>
           <include name="terminateSession"/>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>

@@ -52,11 +52,9 @@ public class SubCategoryPage {
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[1]")
 	private WebElement firstRowOfSubCategoryList;
 	@FindBy(xpath = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr//td[1]")
-	List<WebElement> subCategoryList;
+	private List<WebElement> subCategoryList;
 	@FindBy(xpath = "//button[text()='Update']")
 	private WebElement updateButton;
-	@FindBy(xpath = "")
-	private WebElement deleteButton;
 	
 
 	public SubCategoryPage(WebDriver driver) {

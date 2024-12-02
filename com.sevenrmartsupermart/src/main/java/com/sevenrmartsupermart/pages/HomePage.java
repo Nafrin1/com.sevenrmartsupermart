@@ -68,5 +68,10 @@ public class HomePage {
 		PageUtility pageutility=new PageUtility(driver);
 		return pageutility.isDisplayed(settingsButton);
 	}
+	
+	public void clickAdminUser()
+	{
+		adminUser.click();
+	}
 
 }

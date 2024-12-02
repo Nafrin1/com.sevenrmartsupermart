@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import com.github.javafaker.Faker;
 
@@ -37,12 +38,18 @@ public class GeneralUtility {
 		}
 		return data;
 	}
-
+	
 	public static String getRandomName() {
 		Faker faker = new Faker();
 		return faker.name().firstName();
 	}
 	
+	public static String getRandomPassword()
+	{
+		Faker faker = new Faker();
+		return faker.number().digits(6);
+	}
+
 	public String returnTabName() {
 		return driver.getTitle();
 	}
