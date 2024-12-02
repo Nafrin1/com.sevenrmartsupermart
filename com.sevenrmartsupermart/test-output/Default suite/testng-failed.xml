@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sevenrmartsupermart.tests.SubCategoryTest">
+      <class name="com.sevenrmartsupermart.tests.AdminUserTest">
         <methods>
-          <include name="verifyNewCategoryCanBeCreatedWithImage" invocation-numbers="0 1 2 3"/>
+          <include name="verifyUserTypeInSearchContainsAllOptions"/>
           <include name="terminateSession"/>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.sevenrmartsupermart.tests.SubCategoryTest -->
+      </class> <!-- com.sevenrmartsupermart.tests.AdminUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,5 +12,11 @@ public class DataProviderInput {
 		excelreader.setExcelFile("SubCategory", "CategoryNames");
 		return excelreader.getMultidimentionalData(4, 1);
 	}
+	
+	@DataProvider(name = "NewAdminUser")
+	public Object[][] newAdminUserDetails() {
+		excelreader.setExcelFile("AdminUser", "UserType");
+		return excelreader.getMultidimentionalData(4, 1);
+	}
 
 }

@@ -24,8 +24,8 @@ public class HomePage {
 	private WebElement settingsButton;
 	@FindBy(xpath = "(//p[contains(text(),'Sub Category')]//following::a[1])[2]")
 	private WebElement subCategory;
-	@FindBy(xpath = "//a[@class='dropdown-item']")
-	List<WebElement> profileOptions;
+	@FindBy(xpath = "(//div[@class='small-box bg-info']//a)[1]")
+	private WebElement adminUser;
 	@FindBy(xpath = "(//ul[@class='nav nav-pills nav-sidebar flex-column']//p)[1]")
 	private WebElement sideMenuDashboard;
 	
@@ -68,6 +68,5 @@ public class HomePage {
 		PageUtility pageutility=new PageUtility(driver);
 		return pageutility.isDisplayed(settingsButton);
 	}
-	
 
 }

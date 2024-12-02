@@ -21,6 +21,7 @@ public class HomeTest extends Base {
 		boolean actualStatusForSettings=homepage.isSettingsDisplayed();
 		softassert.assertTrue(actualStatusForLogout);
 		softassert.assertTrue(actualStatusForSettings);
+		softassert.assertAll();
 	}
 	
 	@Test
@@ -35,6 +36,7 @@ public class HomeTest extends Base {
 		boolean actualStatus=loginpage.signInButtonIsDisplayed();
 		softassert.assertEquals(actualTabName, expectedTabName);
 		softassert.assertTrue(actualStatus);
+		softassert.assertAll();
 	}
 
 }
